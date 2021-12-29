@@ -1,3 +1,26 @@
 body {
-    background-color: red;
+  padding: 0;
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+#header {
+  text-align: center;
+  font-size: 5rem;
+}
+
+#quiz-container {
+  width: 50rem;
+  background-color: #C2C2C2;
+  padding: 5px;
+  width: 85vw;
+  height: 60vh;
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+button {
+  font-family: inherit;
 }
