@@ -5,23 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
-      </style>
     <title>Document</title>
 </head>
 <body>
-    <h1 id ="header">General Knowledge Quiz</h1>
-    <div id ="quiz-container">
-        <div id ="question-area">
-            <div id="question">Question</div>
-            <div id="answer">
-              <button id="answer1" class="answer-btn">Answer 1</button>
-              <button id="answer2" class="answer-btn">Answer 2</button>
-              <button id="answer3" class="answer-btn">Answer 3</button>
+    <h1 id="header">General Knowledge Quiz</h1>
+    <div id="quiz-container">
+        <div id="question-area">
+            <div id="question" class="hide">Question</div>
+            <div id="answer" class="answers-grid">
+              <button id="answer1" class="answer-btn btn hide">Answer 1</button>
+              <button id="answer2" class="answer-btn btn hide">Answer 2</button>
+              <button id="answer3" class="answer-btn btn hide">Answer 3</button>
             </div>
             <button id="start-btn">Start Quiz</button>
-            <div id= "submit"></div>
+            <button id="next" class="hide">Next Question</button>
+            <div id="submit" class="hide">
+              <form action="#">
+                <label for="username">Enter name and get your score</label>
+                <input type="text" name="username" id="username" required>
+                <button id="submission" class="btn">Submit your score</button>
+              </form>
+            </div>
+            <div id="top-five" class="hide"></div>
         </div>
     </div>
     <script src="assets/js/script.js"></script>
