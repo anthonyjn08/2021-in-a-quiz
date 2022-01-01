@@ -11,6 +11,8 @@ body {
   font-size: 5rem;
 }
 
+/* Quiz Area */
+
 #quiz-container {
   width: 50rem;
   background-color: #C2C2C2;
@@ -24,13 +26,6 @@ body {
   text-align: center;
 }
 
-button {
-  font-family: inherit;
-  background-color: #87CEEB;
-  border-radius: 5px;
-  font-size: 25px;
-}
-
 .answers-grid {
   display: grid;
   margin: 10px;
@@ -38,6 +33,24 @@ button {
   width: 400px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.hide {
+  display: none;
+}
+
+/* Buttons/Controls */
+
+button {
+  font-family: inherit;
+  background-color: #87CEEB;
+  border-radius: 5px;
+  font-size: 25px;
+}
+
+#start-btn {
+  height: 6rem;
+  font-size: 4rem;
 }
 
 #submission {

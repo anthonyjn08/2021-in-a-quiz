@@ -10,24 +10,24 @@
 <body>
     <h1 id="header">2021 In A Quiz!</h1>
     <div id="quiz-container">
-        <div id="question-area">
-            <div id="question" class="hide">Question</div>
-            <div id="answer" class="answers-grid">
-              <button id="answer1" class="answer-btn btn hide">Answer 1</button>
-              <button id="answer2" class="answer-btn btn hide">Answer 2</button>
-              <button id="answer3" class="answer-btn btn hide">Answer 3</button>
-            </div>
-            <button id="start-btn">Start Quiz</button>
-            <button id="next-btn" class="hide">Next Question</button>
-            <div id="submit" class="hide">
-              <form action="#">
-                <label for="username">Enter name and get your score</label>
-                <input type="text" name="username" id="username" required>
-                <button id="submission" class="btn">Submit your score</button>
-              </form>
-            </div>
-            <div id="top-five" class="hide"></div>
+      <div id="question-area" class="hide">
+        <div id="question">Question</div>
+        <div id="answer" class="answers-grid">
+          <button id="answer1" class="answer-btn btn">Answer 1</button>
+          <button id="answer2" class="answer-btn btn">Answer 2</button>
+          <button id="answer3" class="answer-btn btn">Answer 3</button>
         </div>
+      </div>
+      <button id="start-btn">Start Quiz</button>
+      <button id="next-btn" class="hide">Next Question</button>
+      <div id="submit" class="hide">
+        <form action="#">
+          <label for="username">Enter name and get your score</label>
+          <input type="text" name="username" id="username" required>
+          <button id="submission" class="btn">Submit your score</button>
+        </form>
+      </div>
+      <div id="top-five" class="hide"></div>
     </div>
     <script src="assets/js/script.js"></script>
 </body>
