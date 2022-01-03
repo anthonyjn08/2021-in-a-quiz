@@ -13,15 +13,15 @@
       <div id="question-area" class="hide">
         <div id="question">Question</div>
         <div id="answer" class="answers-grid">
-          <button id="answer1" class="answer-btn btn">Answer 1</button>
-          <button id="answer2" class="answer-btn btn">Answer 2</button>
-          <button id="answer3" class="answer-btn btn">Answer 3</button>
+          <button id="A" class="answer-btn btn" onclick="checkAnswer('A')">Answer 1</button>
+          <button id="B" class="answer-btn btn">Answer 2</button>
+          <button id="C" class="answer-btn btn">Answer 3</button>
         </div>
       </div>
       <div id="controls">
-        <button id="start-btn">Start Quiz</button>
-        <button id="next-btn" class="hide">Next Question</button>
-        <div id="submit" class="hide">
+        <button id="start-btn" class="btn">Start Quiz</button>
+        <button id="next-btn" class="hide btn">Next Question</button>
+        <div id="submit" class="hide btn">
           <form action="#">
             <label for="username">Enter name and get your score</label>
             <input type="text" name="username" id="username" required>

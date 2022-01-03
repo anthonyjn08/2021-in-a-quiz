@@ -46,6 +46,11 @@ button {
   background-color: #87CEEB;
   border-radius: 5px;
   font-size: 25px;
+  border: 1px solid #000;
+}
+
+.btn:hover {
+  border: 2px solid #101eda;
 }
 
 #start-btn {

@@ -1,12 +1,46 @@
-let startButton = document.getElementById('start-btn')
-let nextButton = document.getElementById('next-btn')
-let quizArea = document.getElementById('question-area')
-let questionText = document.getElementById('question')
-let answer1 = document.getElementById('answer1')
-let answer2 = document.getElementById('answer2')
-let answer3 = document.getElementById('answer3')
+const startButton = document.getElementById('start-btn');
+const nextButton = document.getElementById('next-btn');
+const quizArea = document.getElementById('question-area');
+const questionText = document.getElementById('question');
+const choiceA = document.getElementById('A');
+const choiceB = document.getElementById('B');
+const choiceC = document.getElementById('C');
 
+const questions = [
+  {
+    question: 'What is 2 x 5?',
+    choiceA: '25',
+    choiceB:'10',
+    choiceC: '5',
+    correct: 'B'
+  },
+  {
+    question: 'What is 2 x 8?',
+    choiceA: '16',
+    choiceB:'8',
+    choiceC: '24',
+    correct: 'A'
+  },
+  {
+    question: 'What is 2 x 8?',
+    choiceA: '16',
+    choiceB:'8',
+    choiceC: '24',
+    correct: 'A'
+  }
+]
+
+const lastQuestion = questions.length -1;
 let currentQuestion = 0;
+let score = 0;
+
+function nextQuestion() {
+  let q = questions[currentQuestion]
+  questionText.innerText = q.question
+  choiceA.innerText = q.choiceA
+  choiceB.innerText = q.choiceB
+  choiceC.innerText = q.choiceC
+}
 
 startButton.addEventListener('click', startQuiz)
 
@@ -16,43 +50,39 @@ startButton.addEventListener('click', startQuiz)
  */
 
 function startQuiz() {
+  nextQuestion()
   console.log('starting')
   startButton.classList.add('hide')
   quizArea.classList.remove('hide')
   nextButton.classList.remove('hide')
-  questionText.innerText = questions[currentQuestion].question
-  answer1.innerText = questions[currentQuestion].answer1
-  answer2.innerText = questions[currentQuestion].answer2
-  answer3.innerText = questions[currentQuestion].answer3
-
-
-}
-
-function nextQuestion() {
+  
   
 }
 
-function selectAnswewr() {
 
+
+function checkAnswer(answer) {
+  if (answer == questions[nextQuestion].correct) {
+    score++
+    /*answerIsCorrect();*/
+  } 
+
+  if (currentQuestion < lastQuestion) {
+    currentQuestion++;
+    nextQuestion()
+  }
+
+}
+
+/*function answerIsCorrect() {
+  document.getElementById(nextQuestion).style.backgroundColor = #A2C3A4;
+}
+
+function answerIsWrong() {
+  document.getElementById(nextQuestion).style.backgroundColor = #EF233C;
 }
 
 function submitScore() {
 
-}
+}*/
 
-const questions = [
-  {
-    question: 'What is 2 * 5',
-    answer1: '25',
-    answer2:'10',
-    answer3: '5',
-    correct: '10'
-  },
-  {
-    question: 'What is 2 * 8',
-    answer1: '16',
-    answer2:'8',
-    answer3: '24',
-    correct: '1'
-  }
-]
