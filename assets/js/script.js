@@ -61,28 +61,7 @@ function startQuiz() {
 
 
 
-function checkAnswer(answer) {
-  if (answer == questions[nextQuestion].correct) {
-    score++
-    /*answerIsCorrect();*/
-  } 
+function checkAnswer(answer) {}
 
-  if (currentQuestion < lastQuestion) {
-    currentQuestion++;
-    nextQuestion()
-  }
 
-}
-
-/*function answerIsCorrect() {
-  document.getElementById(nextQuestion).style.backgroundColor = #A2C3A4;
-}
-
-function answerIsWrong() {
-  document.getElementById(nextQuestion).style.backgroundColor = #EF233C;
-}
-
-function submitScore() {
-
-}*/
 
