@@ -9,25 +9,44 @@ let userScore = document.getElementById('user-score')
 
 const questions = [
   {
-    question: 'What is 2 x 5?',
-    choiceA: '25',
-    choiceB:'10',
-    choiceC: '5',
-    correct: 'B'
-   },
-   {
-    question: 'What is 2 x 8?',
-    choiceA: '16',
-    choiceB:'8',
-    choiceC: '24',
-    correct: 'A'
+    question: 'Which country hosted the delayed 2020 Olympics in 2021?',
+    choiceA: 'China',
+    choiceB: 'Japan',
+    choiceC: 'Australia',
+    correct: 'B',
+    category: 'sports'
   },
   {
-    question: 'What is 2 x 8?',
-    choiceA: '16',
-    choiceB:'8',
-    choiceC: '24',
-    correct: 'A'
+    question: 'Which female tennis player was the surprise winner of the US Open in 2021?',
+    choiceA: 'Emma Raducanu',
+    choiceB: 'Ashleigh Barty',
+    choiceC: 'Naomi Osaka',
+    correct: 'A',
+    category: 'sports'
+  },
+  {
+    question: 'The delayed Euro 2020 football tournament took place in 2021. Which country won?',
+    choiceA: 'Spain',
+    choiceB: 'Italy',
+    choiceC: 'France',
+    correct: 'B',
+    category: 'sports'
+  },
+  {
+    question: 'Which football team did Lionel Messi join after ending his 21 year stay at Barcelona?',
+    choiceA: 'Real Madrid',
+    choiceB: 'Paris Saint-Germain',
+    choiceC: 'Bayern Munich',
+    correct: 'B',
+    category: 'sports'
+  },
+  {
+    question: 'Which Basketball team won their first NBA title for 50 years in 2021?',
+    choiceA: 'Milwaukee Bucks',
+    choiceB: 'Phoenix Sun',
+    choiceC: 'Toronto Raptors',
+    correct: 'A',
+    category: 'sports'
   }
   
 ]
