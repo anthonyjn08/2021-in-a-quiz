@@ -11,16 +11,17 @@
     <h1 id="header">2021 In A Quiz!</h1>
     <div id="quiz-container">
       <div id="question-area" class="hide">
-        <div id="question">Question</div>
+        <div><p id="question">Question</p></div>
         <div id="answer" class="answers-grid">
           <button id="A" class="answer-btn btn" onclick="checkAnswer('A')">Answer 1</button>
-          <button id="B" class="answer-btn btn">Answer 2</button>
-          <button id="C" class="answer-btn btn">Answer 3</button>
+          <button id="B" class="answer-btn btn" onclick="checkAnswer('B')">Answer 2</button>
+          <button id="C" class="answer-btn btn" onclick="checkAnswer('C')">Answer 3</button>
         </div>
+        <div><p id="user-score"></p></div>
       </div>
       <div id="controls">
         <button id="start-btn" class="btn">Start Quiz</button>
-        <button id="next-btn" class="hide btn">Next Question</button>
+        <button id="restart-btn" class="hide btn">Next Question</button>
         <div id="submit" class="hide btn">
           <form action="#">
             <label for="username">Enter name and get your score</label>
@@ -31,6 +32,7 @@
       </div>
       <div id="top-five" class="hide"></div>
     </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
