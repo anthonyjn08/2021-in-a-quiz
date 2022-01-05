@@ -87,8 +87,48 @@ const questions = [
     choiceC: 'COP26',
     correct: 'C',
     category: 'general-knowledge'
+  },
+  {
+    question: 'Which popular Netflix series follows a French professional thief?',
+    choiceA: 'Louis',
+    choiceB: 'Lucas',
+    choiceC: 'Lupin',
+    correct: 'C',
+    category: 'tv-film'
+  },
+  {
+    question: 'What was the highest grossing movie of 2021?',
+    choiceA: 'Venom: Let There Be Carnage',
+    choiceB: 'F9: The Fast Saga',
+    choiceC: 'Spider-Man: No Way Home',
+    correct: 'C',
+    category: 'tv-film'
+  },
+  {
+    question: 'What was the most popular Netflix series of 2021?',
+    choiceA: 'Squid Game',
+    choiceB: 'Bridgerton',
+    choiceC: 'Money Heist',
+    correct: 'A',
+    category: 'tv-film'
+  },
+  {
+    question: 'What 2021 film sees Keanu Reeves reprise his role as Neo 18 years after the previous film?',
+    choiceA: 'Bill & Ted Face the Music',
+    choiceB: 'The Matrix Revolutions',
+    choiceC: 'The Matrix Resurrections',
+    correct: 'C',
+    category: 'tv-film'
+  },
+  {
+    question: 'What film won the Best Animated Feature film at the 2021 Oscars?',
+    choiceA: 'Over the Moon',
+    choiceB: 'Onward',
+    choiceC: 'Soul',
+    correct: 'C',
+    category: 'tv-film'
   }
-  
+ 
 ]
 
 const lastQuestion = questions.length -1;
