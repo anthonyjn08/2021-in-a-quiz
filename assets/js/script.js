@@ -47,6 +47,46 @@ const questions = [
     choiceC: 'Toronto Raptors',
     correct: 'A',
     category: 'sports'
+  },
+  {
+    question: 'What were the most popular boys and girls names in the UK for 2021?',
+    choiceA: 'Oliver & Lily',
+    choiceB: 'Noah & Sophia',
+    choiceC: 'Muhammad & Olivia',
+    correct: 'C',
+    category: 'general-knowledge'
+  },
+  {
+    question: 'Which country became a republic on the 55th anniversary of its independence?',
+    choiceA: 'Barbados',
+    choiceB: 'Jamaica',
+    choiceC: 'Dominica',
+    correct: 'A',
+    category: 'general-knowledge'
+  },
+  {
+    question: 'In January 2021 who was sworn in as the 46th US President?',
+    choiceA: 'Joe Biden',
+    choiceB: 'Donald Trump',
+    choiceC: 'Barack Obama',
+    correct: 'A',
+    category: 'general-knowledge'
+  },
+  {
+    question: 'In which of the following canals did the container ship, Ever Given, run aground?',
+    choiceA: 'Corinth Canal',
+    choiceB: 'Suez Canal',
+    choiceC: 'Panama Canal',
+    correct: 'B',
+    category: 'general-knowledge'
+  },
+  {
+    question: 'What was the name of the 2021 United Nations Climate Change Conference which took place in Scotland?',
+    choiceA: 'MOP21',
+    choiceB: 'CAP96',
+    choiceC: 'COP26',
+    correct: 'C',
+    category: 'general-knowledge'
   }
   
 ]
