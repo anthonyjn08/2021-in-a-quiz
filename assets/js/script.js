@@ -33,7 +33,7 @@ const questions = [
     choiceC: 'France',
     correct: 'B',
     category: 'sports'
-  },/**
+  },
   {
     question: 'Which football team did Lionel Messi join after ending his 21 year stay at Barcelona?',
     choiceA: 'Real Madrid',
@@ -65,7 +65,7 @@ const questions = [
     choiceC: 'Dominica',
     correct: 'A',
     category: 'general-knowledge'
-  },
+  },/**
   {
     question: 'In January 2021 who was sworn in as the 46th US President?',
     choiceA: 'Joe Biden',
@@ -149,7 +149,7 @@ function nextQuestion() {
     choiceC.innerText = q.choiceC
   }
 
-  userScore.innerHTML = `Total score: ` + `${score}`;
+  userScore.innerHTML = `Current score: ` + `${score}`;
 }
 
 startButton.addEventListener('click', startQuiz)
@@ -199,6 +199,18 @@ function checkAnswer(answer) {
 function endQuiz() {
   quizArea.classList.add('hide')
   submissionArea.classList.remove('hide')
-  finalScore.innerHTML = score / questions.length
+  const answerPercent = Math.round( 100 * score/questions.length)
+  if (answerPercent >= 80) {
+    finalScore.innerHTML = `Congratulations, you scored ` + `${answerPercent}` + `%`
+  } else if (answerPercent >= 60) {
+    finalScore.innerHTML = `try harder`
+  } else if (answerPercent >= 40) {
+    finalScore.innerHTML = `try harder`
+  } else if (answerPercent >= 20) {
+    finalScore.innerHTML = `try harder`
+  } else {
+    finalScore.innerHTML = `try harder anthony`
+  }
+  
 }
 
