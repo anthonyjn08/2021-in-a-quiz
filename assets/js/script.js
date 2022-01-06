@@ -2,6 +2,8 @@ const startButton = document.getElementById('start-btn');
 const restartButton = document.getElementById('restart-btn');
 const quizArea = document.getElementById('question-area');
 const questionText = document.getElementById('question');
+const submissionArea = document.getElementById('submission-area');
+const finalScore = document.getElementById('final-score')
 const choiceA = document.getElementById('A');
 const choiceB = document.getElementById('B');
 const choiceC = document.getElementById('C');
@@ -31,7 +33,7 @@ const questions = [
     choiceC: 'France',
     correct: 'B',
     category: 'sports'
-  },
+  },/**
   {
     question: 'Which football team did Lionel Messi join after ending his 21 year stay at Barcelona?',
     choiceA: 'Real Madrid',
@@ -127,7 +129,7 @@ const questions = [
     choiceC: 'Soul',
     correct: 'C',
     category: 'tv-film'
-  }
+  } */
  
 ]
 
@@ -138,6 +140,7 @@ let score = 0;
 function nextQuestion() {
   if (currentQuestion > lastQuestion) {
     console.log('end')
+    endQuiz()
   } else {
     let q = questions[currentQuestion]
     questionText.innerText = q.question
@@ -162,7 +165,6 @@ function startQuiz() {
   nextQuestion()
   console.log('starting')
   startButton.classList.add('hide')
-  restartButton.classList.add('hide')
   quizArea.classList.remove('hide')
     
 }
@@ -194,5 +196,9 @@ function checkAnswer(answer) {
   }
 }
 
-
+function endQuiz() {
+  quizArea.classList.add('hide')
+  submissionArea.classList.remove('hide')
+  finalScore.innerHTML = score / questions.length
+}
 
