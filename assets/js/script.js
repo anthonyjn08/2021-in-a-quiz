@@ -8,6 +8,12 @@ const choiceA = document.getElementById('A');
 const choiceB = document.getElementById('B');
 const choiceC = document.getElementById('C');
 let userScore = document.getElementById('user-score')
+var userName = document.getElementById('username').input
+let form = document.getElementById('submission-form')
+let scoreArea = document.getElementById('score-area')
+
+form.addEventListener('submit', handleSubmit)
+
 
 const questions = [
   {
@@ -17,7 +23,7 @@ const questions = [
     choiceC: 'Australia',
     correct: 'B',
     category: 'sports'
-  },
+  },/**
   {
     question: 'Which female tennis player was the surprise winner of the US Open in 2021?',
     choiceA: 'Emma Raducanu',
@@ -65,7 +71,7 @@ const questions = [
     choiceC: 'Dominica',
     correct: 'A',
     category: 'general-knowledge'
-  },/**
+  },
   {
     question: 'In January 2021 who was sworn in as the 46th US President?',
     choiceA: 'Joe Biden',
@@ -199,18 +205,40 @@ function checkAnswer(answer) {
 function endQuiz() {
   quizArea.classList.add('hide')
   submissionArea.classList.remove('hide')
-  const answerPercent = Math.round( 100 * score/questions.length)
+  /*let answerPercent = Math.round( 100 * score/questions.length)
   if (answerPercent >= 80) {
     finalScore.innerHTML = `Congratulations, you scored ` + `${answerPercent}` + `%`
   } else if (answerPercent >= 60) {
-    finalScore.innerHTML = `try harder`
+    finalScore.innerHTML = `60 you scored ` + `${answerPercent}`
   } else if (answerPercent >= 40) {
-    finalScore.innerHTML = `try harder`
+    finalScore.innerHTML = `40 you scored ` + `${answerPercent}`
   } else if (answerPercent >= 20) {
-    finalScore.innerHTML = `try harder`
+    finalScore.innerHTML = `20 you scored ` + `${answerPercent}`
   } else {
-    finalScore.innerHTML = `try harder anthony`
-  }
+    finalScore.innerHTML = `you scored ` + `${answerPercent}` + `try harder anthony`
+  } */
   
 }
 
+function handleSubmit(event) {
+  event.preventDefault();
+  showScore()
+}
+
+function showScore() {
+  console.log(userName)
+  submissionArea.classList.add('hide')
+  scoreArea.classList.remove('hide')
+  let answerPercent = Math.round( 100 * score/questions.length)
+  if (answerPercent >= 80) {
+    finalScore.innerHTML = `Congratulations ` + `${userName}` + `, you scored ` + `${answerPercent}` + `%`
+  } else if (answerPercent >= 60) {
+    finalScore.innerHTML = `60 you scored ` + `${answerPercent}`
+  } else if (answerPercent >= 40) {
+    finalScore.innerHTML = `40 you scored ` + `${answerPercent}`
+  } else if (answerPercent >= 20) {
+    finalScore.innerHTML = `20 you scored ` + `${answerPercent}`
+  } else {
+    finalScore.innerHTML = `you scored ` + `${answerPercent}` + `try harder anthony`
+  }
+}
