@@ -23,7 +23,7 @@ const questions = [
     choiceB: 'Japan',
     choiceC: 'Australia',
     correct: 'B',
-    category: '<i class="fas fa-medal"></i>'
+    category: '<i class="fas fa-running"></i>'
   },
   {
     question: 'Which female tennis player was the surprise winner of the US Open in 2021?',
@@ -31,7 +31,7 @@ const questions = [
     choiceB: 'Ashleigh Barty',
     choiceC: 'Naomi Osaka',
     correct: 'A',
-    category: 'tennis'
+    category: '<i class="fas fa-running"></i>'
   },
   {
     question: 'The delayed Euro 2020 football tournament took place in 2021. Which country won?',
@@ -39,7 +39,7 @@ const questions = [
     choiceB: 'Italy',
     choiceC: 'France',
     correct: 'B',
-    category: 'sports'
+    category: '<i class="fas fa-running"></i>'
   },
   {
     question: 'Which football team did Lionel Messi join after ending his 21 year stay at Barcelona?',
@@ -47,7 +47,7 @@ const questions = [
     choiceB: 'Paris Saint-Germain',
     choiceC: 'Bayern Munich',
     correct: 'B',
-    category: 'sports'
+    category: '<i class="fas fa-running"></i>'
   },
   {
     question: 'Which Basketball team won their first NBA title for 50 years in 2021?',
@@ -55,7 +55,7 @@ const questions = [
     choiceB: 'Phoenix Sun',
     choiceC: 'Toronto Raptors',
     correct: 'A',
-    category: 'sports'
+    category: '<i class="fas fa-running"></i>'
   },
   {
     question: 'What were the most popular boys and girls names in the UK for 2021?',
@@ -63,7 +63,7 @@ const questions = [
     choiceB: 'Noah & Sophia',
     choiceC: 'Muhammad & Olivia',
     correct: 'C',
-    category: 'general-knowledge'
+    category: '<i class="fas fa-brain"></i>'
   }, /**
   {
     question: 'Which country became a republic on the 55th anniversary of its independence?',
@@ -71,7 +71,7 @@ const questions = [
     choiceB: 'Jamaica',
     choiceC: 'Dominica',
     correct: 'A',
-    category: 'general-knowledge'
+    category: '<i class="fas fa-brain"></i>'
   },
   {
     question: 'In January 2021 who was sworn in as the 46th US President?',
@@ -79,7 +79,7 @@ const questions = [
     choiceB: 'Donald Trump',
     choiceC: 'Barack Obama',
     correct: 'A',
-    category: 'general-knowledge'
+    category: '<i class="fas fa-brain"></i>'
   },
   {
     question: 'In which of the following canals did the container ship, Ever Given, run aground?',
@@ -87,7 +87,7 @@ const questions = [
     choiceB: 'Suez Canal',
     choiceC: 'Panama Canal',
     correct: 'B',
-    category: 'general-knowledge'
+    category: '<i class="fas fa-brain"></i>'
   },
   {
     question: 'What was the name of the 2021 United Nations Climate Change Conference which took place in Scotland?',
@@ -95,7 +95,7 @@ const questions = [
     choiceB: 'CAP96',
     choiceC: 'COP26',
     correct: 'C',
-    category: 'general-knowledge'
+    category: '<i class="fas fa-brain"></i>'
   },
   {
     question: 'Which popular Netflix series follows a French professional thief?',
@@ -103,7 +103,7 @@ const questions = [
     choiceB: 'Lucas',
     choiceC: 'Lupin',
     correct: 'C',
-    category: 'tv'
+    category: '<i class="fas fa-video"></i>'
   },
   {
     question: 'What was the highest grossing movie of 2021?',
@@ -111,7 +111,7 @@ const questions = [
     choiceB: 'F9: The Fast Saga',
     choiceC: 'Spider-Man: No Way Home',
     correct: 'C',
-    category: 'film'
+    category: '<i class="fas fa-video"></i>'
   },
   {
     question: 'What was the most popular Netflix series of 2021?',
@@ -119,7 +119,7 @@ const questions = [
     choiceB: 'Bridgerton',
     choiceC: 'Money Heist',
     correct: 'A',
-    category: 'tv'
+    category: '<i class="fas fa-video"></i>'
   },
   {
     question: 'What 2021 film sees Keanu Reeves reprise his role as Neo 18 years after the previous film?',
@@ -127,7 +127,7 @@ const questions = [
     choiceB: 'The Matrix Revolutions',
     choiceC: 'The Matrix Resurrections',
     correct: 'C',
-    category: 'film'
+    category: '<i class="fas fa-video"></i>'
   },
   {
     question: 'What film won the Best Animated Feature film at the 2021 Oscars?',
@@ -135,7 +135,7 @@ const questions = [
     choiceB: 'Onward',
     choiceC: 'Soul',
     correct: 'C',
-    category: 'film'
+    category: '<i class="fas fa-video"></i>'
   },
   {
     question: 'Who received the most awards at the 2021 Grammys?',
@@ -143,7 +143,7 @@ const questions = [
     choiceB: 'Beyonce',
     choiceC: 'Lady Gaga',
     correct: 'B',
-    category: 'music'
+    category: '<i class="fas fa-music"></i>'
   },
   {
     question: 'Who had the biggest selling album in Britain in 2021?',
@@ -151,7 +151,7 @@ const questions = [
     choiceB: 'Dave',
     choiceC: 'Adele',
     correct: 'C',
-    category: 'music'
+    category: '<i class="fas fa-music"></i>'
   },
   {
     question: 'What song was the Christmas No.1 in 2021?',
@@ -159,7 +159,7 @@ const questions = [
     choiceB: 'Sausage Rolls For Everyone',
     choiceC: 'All I Want For Christmas Is You',
     correct: 'B',
-    category: 'music'
+    category: '<i class="fas fa-music"></i>'
   },
   {
     question: 'Bad Habits by Ed Sheeran was the longest running number 1 of 2021. How long did it top the charts?',
@@ -167,7 +167,7 @@ const questions = [
     choiceB: '10 Weeks',
     choiceC: '11 Weeks',
     correct: 'C',
-    category: 'music'
+    category: '<i class="fas fa-music"></i>'
   },
   {
     question: 'Who was voted best International Group at the 2021 BRIT awards?',
@@ -175,7 +175,7 @@ const questions = [
     choiceB: 'BTS',
     choiceC: 'Run The Jewels',
     correct: 'A',
-    category: 'music'
+    category: '<i class="fas fa-music"></i>'
   } */
  
 ]
