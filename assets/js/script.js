@@ -8,7 +8,7 @@ const choiceA = document.getElementById('A');
 const choiceB = document.getElementById('B');
 const choiceC = document.getElementById('C');
 let userScore = document.getElementById('user-score')
-var userName = document.getElementById('username').input
+var userName = document.getElementById('username')
 let form = document.getElementById('submission-form')
 let scoreArea = document.getElementById('score-area')
 
@@ -205,19 +205,7 @@ function checkAnswer(answer) {
 function endQuiz() {
   quizArea.classList.add('hide')
   submissionArea.classList.remove('hide')
-  /*let answerPercent = Math.round( 100 * score/questions.length)
-  if (answerPercent >= 80) {
-    finalScore.innerHTML = `Congratulations, you scored ` + `${answerPercent}` + `%`
-  } else if (answerPercent >= 60) {
-    finalScore.innerHTML = `60 you scored ` + `${answerPercent}`
-  } else if (answerPercent >= 40) {
-    finalScore.innerHTML = `40 you scored ` + `${answerPercent}`
-  } else if (answerPercent >= 20) {
-    finalScore.innerHTML = `20 you scored ` + `${answerPercent}`
-  } else {
-    finalScore.innerHTML = `you scored ` + `${answerPercent}` + `try harder anthony`
-  } */
-  
+    
 }
 
 function handleSubmit(event) {
@@ -231,7 +219,7 @@ function showScore() {
   scoreArea.classList.remove('hide')
   let answerPercent = Math.round( 100 * score/questions.length)
   if (answerPercent >= 80) {
-    finalScore.innerHTML = `Congratulations ` + `${userName}` + `, you scored ` + `${answerPercent}` + `%`
+    finalScore.innerHTML = `Congratulations ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%`
   } else if (answerPercent >= 60) {
     finalScore.innerHTML = `60 you scored ` + `${answerPercent}`
   } else if (answerPercent >= 40) {
