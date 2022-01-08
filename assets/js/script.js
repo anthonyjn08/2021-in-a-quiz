@@ -7,6 +7,7 @@ const finalScore = document.getElementById('final-score')
 const choiceA = document.getElementById('A');
 const choiceB = document.getElementById('B');
 const choiceC = document.getElementById('C');
+const catImage = document.getElementById('cat-image')
 let userScore = document.getElementById('user-score')
 var userName = document.getElementById('username')
 let form = document.getElementById('submission-form')
@@ -22,7 +23,7 @@ const questions = [
     choiceB: 'Japan',
     choiceC: 'Australia',
     correct: 'B',
-    category: 'sports'
+    category: '<i class="fas fa-medal"></i>'
   },
   {
     question: 'Which female tennis player was the surprise winner of the US Open in 2021?',
@@ -30,7 +31,7 @@ const questions = [
     choiceB: 'Ashleigh Barty',
     choiceC: 'Naomi Osaka',
     correct: 'A',
-    category: 'sports'
+    category: 'tennis'
   },
   {
     question: 'The delayed Euro 2020 football tournament took place in 2021. Which country won?',
@@ -193,7 +194,12 @@ function nextQuestion() {
     choiceA.innerText = q.choiceA
     choiceB.innerText = q.choiceB
     choiceC.innerText = q.choiceC
+    catImage.innerHTML = q.category
   }
+
+  /** if (currentQuestion.category = 'olympics') {
+    catImage.innerHTML = 'hello'
+  } else if */
 
   userScore.innerHTML = `Current score: ` + `${score}`;
 }

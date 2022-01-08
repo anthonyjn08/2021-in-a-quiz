@@ -39,6 +39,12 @@ body {
   display: none;
 }
 
+#cat-image {
+  font-size: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Buttons/Controls */
 
 button {
