@@ -23,7 +23,7 @@ const questions = [
     choiceC: 'Australia',
     correct: 'B',
     category: 'sports'
-  },/**
+  },
   {
     question: 'Which female tennis player was the surprise winner of the US Open in 2021?',
     choiceA: 'Emma Raducanu',
@@ -63,7 +63,7 @@ const questions = [
     choiceC: 'Muhammad & Olivia',
     correct: 'C',
     category: 'general-knowledge'
-  },
+  }, /**
   {
     question: 'Which country became a republic on the 55th anniversary of its independence?',
     choiceA: 'Barbados',
@@ -102,7 +102,7 @@ const questions = [
     choiceB: 'Lucas',
     choiceC: 'Lupin',
     correct: 'C',
-    category: 'tv-film'
+    category: 'tv'
   },
   {
     question: 'What was the highest grossing movie of 2021?',
@@ -110,7 +110,7 @@ const questions = [
     choiceB: 'F9: The Fast Saga',
     choiceC: 'Spider-Man: No Way Home',
     correct: 'C',
-    category: 'tv-film'
+    category: 'film'
   },
   {
     question: 'What was the most popular Netflix series of 2021?',
@@ -118,7 +118,7 @@ const questions = [
     choiceB: 'Bridgerton',
     choiceC: 'Money Heist',
     correct: 'A',
-    category: 'tv-film'
+    category: 'tv'
   },
   {
     question: 'What 2021 film sees Keanu Reeves reprise his role as Neo 18 years after the previous film?',
@@ -126,7 +126,7 @@ const questions = [
     choiceB: 'The Matrix Revolutions',
     choiceC: 'The Matrix Resurrections',
     correct: 'C',
-    category: 'tv-film'
+    category: 'film'
   },
   {
     question: 'What film won the Best Animated Feature film at the 2021 Oscars?',
@@ -134,7 +134,47 @@ const questions = [
     choiceB: 'Onward',
     choiceC: 'Soul',
     correct: 'C',
-    category: 'tv-film'
+    category: 'film'
+  },
+  {
+    question: 'Who received the most awards at the 2021 Grammys?',
+    choiceA: 'Dua Lipa',
+    choiceB: 'Beyonce',
+    choiceC: 'Lady Gaga',
+    correct: 'B',
+    category: 'music'
+  },
+  {
+    question: 'Who had the biggest selling album in Britain in 2021?',
+    choiceA: 'Ed Sheeran',
+    choiceB: 'Dave',
+    choiceC: 'Adele',
+    correct: 'C',
+    category: 'music'
+  },
+  {
+    question: 'What song was the Christmas No.1 in 2021?',
+    choiceA: 'Last Christmas',
+    choiceB: 'Sausage Rolls For Everyone',
+    choiceC: 'All I Want For Christmas Is You',
+    correct: 'B',
+    category: 'music'
+  },
+  {
+    question: 'Bad Habits by Ed Sheeran was the longest running number 1 of 2021. How long did it top the charts?',
+    choiceA: '8 Weeks',
+    choiceB: '10 Weeks',
+    choiceC: '11 Weeks',
+    correct: 'C',
+    category: 'music'
+  },
+  {
+    question: 'Who was voted best International Group at the 2021 BRIT awards?',
+    choiceA: 'Haim',
+    choiceB: 'BTS',
+    choiceC: 'Run The Jewels',
+    correct: 'A',
+    category: 'music'
   } */
  
 ]
@@ -218,8 +258,10 @@ function showScore() {
   submissionArea.classList.add('hide')
   scoreArea.classList.remove('hide')
   let answerPercent = Math.round( 100 * score/questions.length)
-  if (answerPercent >= 80) {
+  if (answerPercent == 100) {
     finalScore.innerHTML = `Congratulations ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%`
+  } else if (answerPercent >= 80) {
+    finalScore.innerHTML = `80 you scored ` + `${answerPercent}`
   } else if (answerPercent >= 60) {
     finalScore.innerHTML = `60 you scored ` + `${answerPercent}`
   } else if (answerPercent >= 40) {
