@@ -13,6 +13,10 @@ body {
   color: #000;
 }
 
+#hero-image {
+  text-align: center;
+}
+
 /* Quiz Area */
 
 #quiz-container {
@@ -112,6 +116,10 @@ button {
 
 @media screen and (max-width : 600px) {
 
+  #quiz-container {
+    font-size: 16px;
+  }
+
   .answers-grid {
     width: 65vw;
     margin-left: auto;
@@ -124,6 +132,10 @@ button {
 
   .btn {
     font-size: 15px;
+  }
+
+  #hero-image img {
+    width: 200px;
   }
   
 }
