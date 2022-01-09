@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Document</title>
 </head>
+
 <body>
+  <header>
     <h1 id="header">2021 In A Quiz!</h1>
-    <div id="quiz-container">
-      <div id="question-area" class="hide">
-        <div><p id="question">Question</p></div>
-        <div id="answer" class="answers-grid">
-          <button id="A" class="answer-btn btn" onclick="checkAnswer('A')">Answer 1</button>
-          <button id="B" class="answer-btn btn" onclick="checkAnswer('B')">Answer 2</button>
-          <button id="C" class="answer-btn btn" onclick="checkAnswer('C')">Answer 3</button>
-          <div id="cat-image"></div>
-        </div>
-        <div><p id="user-score"></p></div>
+  </header>
+  <div id="quiz-container">
+    <div id="question-area" class="hide">
+      <div>
+        <p id="question">Question</p>
       </div>
-      <div id="controls">
-        <button id="start-btn" class="btn">Start Quiz</button>
-        <button id="restart-btn" class="hide btn">Next Question</button>
-        <div id="submission-area" class="hide">
-          <form id="submission-form" class="=hide" action="#">
-            <label for="username">Enter name and get your score</label>
-            <input type="text" name="username" id="username" required>
-            <button class="btn">Submit your score</button>
-          </form>
-        </div>
-        <div id ="score-area" class="hide">
-          <p id="final-score"></p>
-        </div>
+      <div id="answer" class="answers-grid">
+        <button id="A" class="answer-btn btn" onclick="checkAnswer('A')">Answer 1</button>
+        <button id="B" class="answer-btn btn" onclick="checkAnswer('B')">Answer 2</button>
+        <button id="C" class="answer-btn btn" onclick="checkAnswer('C')">Answer 3</button>
+        <div id="cat-image"></div>
       </div>
-      <div id="top-five" class="hide"></div>
+      <div>
+        <p id="user-score"></p>
+      </div>
     </div>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://kit.fontawesome.com/0d9d3cf7f6.js" crossorigin="anonymous"></script>
-    <script src="assets/js/script.js"></script>
+    <div id="controls">
+      <button id="start-btn" class="btn">Start Quiz</button>
+      <button id="restart-btn" class="hide btn">Next Question</button>
+      <div id="submission-area" class="hide">
+        <form id="submission-form" class="=hide" action="#">
+          <label for="username">Enter name and get your score</label>
+          <input type="text" name="username" id="username" required>
+          <button class="btn">Submit your score</button>
+        </form>
+      </div>
+      <div id="score-area" class="hide">
+        <p id="final-score"></p>
+      </div>
+    </div>
+    <div id="top-five" class="hide"></div>
+  </div>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://kit.fontawesome.com/0d9d3cf7f6.js" crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
 </body>
+
 </html>

@@ -64,7 +64,7 @@ const questions = [
     choiceC: 'Muhammad & Olivia',
     correct: 'C',
     category: '<i class="fas fa-brain"></i>'
-  }, /**
+  },
   {
     question: 'Which country became a republic on the 55th anniversary of its independence?',
     choiceA: 'Barbados',
@@ -176,7 +176,7 @@ const questions = [
     choiceC: 'Run The Jewels',
     correct: 'A',
     category: '<i class="fas fa-music"></i>'
-  } */
+  }
  
 ]
 
@@ -196,10 +196,6 @@ function nextQuestion() {
     choiceC.innerText = q.choiceC
     catImage.innerHTML = q.category
   }
-
-  /** if (currentQuestion.category = 'olympics') {
-    catImage.innerHTML = 'hello'
-  } else if */
 
   userScore.innerHTML = `Current score: ` + `${score}`;
 }
@@ -267,14 +263,14 @@ function showScore() {
   if (answerPercent == 100) {
     finalScore.innerHTML = `Congratulations ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%`
   } else if (answerPercent >= 80) {
-    finalScore.innerHTML = `80 you scored ` + `${answerPercent}`
+    finalScore.innerHTML = `Well done ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%`
   } else if (answerPercent >= 60) {
-    finalScore.innerHTML = `60 you scored ` + `${answerPercent}`
+    finalScore.innerHTML = `Well done ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%`
   } else if (answerPercent >= 40) {
-    finalScore.innerHTML = `40 you scored ` + `${answerPercent}`
+    finalScore.innerHTML = `Well done ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%`
   } else if (answerPercent >= 20) {
-    finalScore.innerHTML = `20 you scored ` + `${answerPercent}`
+    finalScore.innerHTML = `Well done ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%`
   } else {
-    finalScore.innerHTML = `you scored ` + `${answerPercent}` + `try harder anthony`
+    finalScore.innerHTML = `Well done ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%`
   }
 }
