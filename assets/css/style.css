@@ -52,11 +52,7 @@ button {
   background-color: #87CEEB;
   border-radius: 5px;
   font-size: 25px;
-  border: 1px solid #000;
-}
-
-.btn:hover {
-  border: 2px solid #101eda;
+  border: 2px solid #101EDA;
 }
 
 #start-btn {
@@ -79,6 +75,14 @@ button {
 
 @media screen and (max-width: 1200px) {
 
+  #header {
+    font-size: 3rem;
+  }
+
+  #quiz-container {
+    font-size: 20px;
+  }
+
   #start-btn {
     font-size: 40px;
   }
@@ -91,6 +95,10 @@ button {
     width: 65vw;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  #cat-image {
+    font-size: 40px;
   }
 
   .btn {
