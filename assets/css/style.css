@@ -84,3 +84,17 @@ button {
   }
 
 }
+
+@media screen and (max-width : 600px) {
+
+  .answers-grid {
+    width: 65vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn {
+    font-size: 15px;
+  }
+  
+}
