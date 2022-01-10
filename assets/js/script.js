@@ -32,7 +32,7 @@ const questions = [
     choiceC: 'Naomi Osaka',
     correct: 'A',
     category: '<i class="fas fa-running"></i>'
-  },
+  }, /**
   {
     question: 'The delayed Euro 2020 football tournament took place in 2021. Which country won?',
     choiceA: 'Spain',
@@ -176,7 +176,7 @@ const questions = [
     choiceC: 'Run The Jewels',
     correct: 'A',
     category: '<i class="fas fa-music"></i>'
-  }
+  } */
  
 ]
 
@@ -185,6 +185,7 @@ let currentQuestion = 0;
 let score = 0;
 
 function nextQuestion() {
+
   if (currentQuestion > lastQuestion) {
     console.log('end')
     endQuiz()
@@ -201,7 +202,7 @@ function nextQuestion() {
 }
 
 startButton.addEventListener('click', startQuiz)
-restartButton.addEventListener('click', startQuiz)
+restartButton.addEventListener('click', refresh)
 
 
 /**
@@ -214,12 +215,14 @@ function startQuiz() {
   console.log('starting')
   startButton.classList.add('hide')
   quizArea.classList.remove('hide')
+  submissionArea.classList.add('hide')
     
 }
 
 
 
 function checkAnswer(answer) {
+  
   if(answer === questions[currentQuestion].correct) {
     Swal.fire({
       position: 'center',
@@ -259,6 +262,7 @@ function showScore() {
   console.log(userName)
   submissionArea.classList.add('hide')
   scoreArea.classList.remove('hide')
+  restartButton.classList.remove('hide')
   let answerPercent = Math.round( 100 * score/questions.length)
   if (answerPercent == 100) {
     finalScore.innerHTML = `Congratulations ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%`
@@ -273,4 +277,8 @@ function showScore() {
   } else {
     finalScore.innerHTML = `Well done ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%`
   }
+}
+
+function refresh() {
+  window.location.reload('refresh')
 }
