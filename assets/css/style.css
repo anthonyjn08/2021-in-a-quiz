@@ -17,13 +17,13 @@ body {
 }
 
 #header {
-  text-align: center;
+  /*text-align: center;*/
   font-size: 5rem;
   color: #000;
 }
 
 #hero-image {
-  text-align: center;
+  /*text-align: center;*/
 }
 
 /* Quiz Area */
@@ -34,14 +34,14 @@ body {
   padding: 5px;
   width: 85vw;
   max-width: 50rem;
-  margin-left: auto;
-  margin-right: auto;
+  /*margin-left: auto;
+  margin-right: auto;*/
   border-radius: 10px;
   font-size: 25px;
-  text-align: center;
+  /*text-align: center;*/
 }
 
-.answers-grid {
+#answers-grid {
   display: grid;
   margin: 10px;
   gap: 10px;
@@ -56,8 +56,8 @@ body {
 
 #cat-image {
   font-size: 4rem;
-  margin-left: auto;
-  margin-right: auto;
+  /*margin-left: auto;
+  margin-right: auto;*/
 }
 
 /* Buttons/Controls */
@@ -129,10 +129,10 @@ button {
     font-size: 16px;
   }
 
-  .answers-grid {
+  #answers-grid {
     width: 65vw;
-    margin-left: auto;
-    margin-right: auto;
+    /*margin-left: auto;
+    margin-right: auto;*/
   }
 
   #cat-image {
