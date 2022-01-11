@@ -7,7 +7,7 @@ const finalScore = document.getElementById('final-score')
 const choiceA = document.getElementById('choice-a');
 const choiceB = document.getElementById('choice-b');
 const choiceC = document.getElementById('choice-c');
-const catImage = document.getElementById('cat-image')
+const categoryImage = document.getElementById('category-image')
 let userScore = document.getElementById('user-score')
 var userName = document.getElementById('username')
 let form = document.getElementById('submission-form')
@@ -195,7 +195,7 @@ function nextQuestion() {
     choiceA.innerText = q.choiceA
     choiceB.innerText = q.choiceB
     choiceC.innerText = q.choiceC
-    catImage.innerHTML = q.category
+    categoryImage.innerHTML = q.category
   }
 
   userScore.innerHTML = `Current score: ` + `${score}`;

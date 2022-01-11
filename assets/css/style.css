@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
+/* general page styling and classes */
+
 body {
   padding: 0;
   margin: 0;
@@ -18,12 +20,18 @@ body {
   text-align: center;
 }
 
+.hide {
+  display: none;
+}
+
+/* header */
+
 #header {
   font-size: 5rem;
   color: #000;
 }
 
-/* Quiz Area */
+/* quiz container and area */
 
 #quiz-container {
   width: 50rem;
@@ -44,15 +52,12 @@ body {
   margin-right: auto;
 }
 
-.hide {
-  display: none;
-}
-
-#cat-image {
+#category-image {
   font-size: 4rem;
+  color: #009CB8;
 }
 
-/* Buttons/Controls */
+/* buttons and controls */
 
 button {
   font-family: inherit;
@@ -82,6 +87,8 @@ button {
   border: 2px solid #6B8F71;
 }
 
+/* form section */
+
 #submission {
   margin-left: auto;
   margin-right: auto;
@@ -93,17 +100,18 @@ button {
   font-size: 25px;
 }
 
-#cat-image {
-  color: #009CB8;
-}
 
 /* media queries */
 
 @media screen and (max-width: 1200px) {
 
+  /* header */
+
   #header {
     font-size: 4rem;
   }
+
+  /* quiz area*/
 
   #quiz-container {
     font-size: 20px;
@@ -112,6 +120,8 @@ button {
   #answers-grid {
     width: 65vw;
   }
+
+  /* buttons */
 
   .btn {
     font-size: 15px;
@@ -122,22 +132,24 @@ button {
     font-size: 40px;
   }
 
-  #cat-image {
-    font-size: 40px;
-  }
-
 }
 
 @media screen and (max-width : 600px) {
+
+  /* general page styling */
 
   body {
     background: url('../images/question-mark-background-mobile.jpg') no-repeat center center;
     background-attachment: fixed;
   }
 
+  /* header */
+
   #header {
     font-size: 3rem;
   }
+
+  /* quiz area */
 
   #quiz-container {
     font-size: 16px;
@@ -147,15 +159,19 @@ button {
     width: 65vw;
   }
 
-  #cat-image {
+  #category-image {
     font-size: 40px;
   }
+
+  /* buttons */
 
   .btn {
     font-size: 15px;
   }
 
-    #username {
+  /* form */
+
+  #username {
     height: 1rem;
     font-size: 12px;
     margin-left: auto;
