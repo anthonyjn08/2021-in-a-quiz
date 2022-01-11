@@ -56,7 +56,7 @@ const questions = [
     choiceC: 'Toronto Raptors',
     correct: 'A',
     category: '<i class="fas fa-running"></i>'
-  }, /**
+  },
   {
     question: 'What were the most popular boys and girls names in the UK for 2021?',
     choiceA: 'Oliver & Lily',
@@ -176,7 +176,7 @@ const questions = [
     choiceC: 'Run The Jewels',
     correct: 'A',
     category: '<i class="fas fa-music"></i>'
-  } */
+  }
  
 ]
 
