@@ -33,7 +33,7 @@ const questions = [
     choiceC: 'Naomi Osaka',
     correct: 'A',
     category: '<i class="fas fa-running"></i>'
-  },
+  }, /**
   {
     question: 'The delayed Euro 2020 football tournament took place in 2021. Which country won?',
     choiceA: 'Spain',
@@ -177,7 +177,7 @@ const questions = [
     choiceC: 'Run The Jewels',
     correct: 'A',
     category: '<i class="fas fa-music"></i>'
-  }
+  } */
  
 ]
 
@@ -203,7 +203,7 @@ function nextQuestion() {
 }
 
 startButton.addEventListener('click', startQuiz)
-restartButton.addEventListener('click', refresh)
+restartButton.addEventListener('click', restartQuiz)
 
 
 /**
@@ -280,6 +280,9 @@ function showScore() {
   }
 }
 
-function refresh() {
-  window.location.reload('refresh')
+function restartQuiz() {
+  score = 0
+  currentQuestion = 0
+  scoreArea.classList.add('hide')
+  startQuiz()
 }
