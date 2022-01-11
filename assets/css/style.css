@@ -21,6 +21,12 @@ body {
   color: #000;
 }
 
+#hero-image {
+  background: url('../images/hero-image.png') no-repeat center center;
+  height: 11rem;
+  width: 100vw;
+}
+
 /* Quiz Area */
 
 #quiz-container {
@@ -131,8 +137,10 @@ button {
     font-size: 15px;
   }
 
-  #hero-image img {
-    width: 200px;
+  #hero-image{
+    height: 6rem;
+    width: 100vw;
+    background-size: contain;
   }
   
 }
