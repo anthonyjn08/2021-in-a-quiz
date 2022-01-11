@@ -100,7 +100,6 @@ button {
   font-size: 25px;
 }
 
-
 /* media queries */
 
 @media screen and (max-width: 1200px) {
@@ -126,7 +125,6 @@ button {
   .btn {
     font-size: 15px;
   }
-
 
   #start-btn {
     font-size: 40px;

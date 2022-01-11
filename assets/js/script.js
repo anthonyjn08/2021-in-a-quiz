@@ -13,6 +13,8 @@ let userScore = document.getElementById('user-score')
 let userName = document.getElementById('username')
 let form = document.getElementById('submission-form')
 let scoreArea = document.getElementById('score-area')
+let currentQuestion = 0;
+let score = 0;
 
 form.addEventListener('submit', handleSubmit)
 
@@ -182,8 +184,10 @@ const questions = [
 ]
 
 const lastQuestion = questions.length -1;
-let currentQuestion = 0;
-let score = 0;
+
+/**
+ * This function populates the current question and answers to the relevent areas in the HTML
+ */
 
 function nextQuestion() {
 
@@ -214,13 +218,20 @@ restartButton.addEventListener('click', restartQuiz)
 function startQuiz() {
   nextQuestion()
   console.log('starting')
+  //showHide(startButton)
+  //showHide(quizArea)
   startButton.classList.add('hide')
   quizArea.classList.remove('hide')
-  submissionArea.classList.add('hide')
-    
 }
 
+function showHide(target) {
+  target.classList.contains('hide') ? target.classList.remove('hide') : target.classList.add('hide')
+} 
 
+/**
+ * CheckAnswer functions checks the answer against the answer button pressed and displays a message for correct or wrong answers
+ * and will increment the score if correct, then move on to the next question
+ */
 
 function checkAnswer(answer) {
   
@@ -248,19 +259,36 @@ function checkAnswer(answer) {
   }
 }
 
+/**
+ * This function removes the question area from view and displays the submission form for the player to get their score
+ */
+
 function endQuiz() {
+  //showHide(quizArea)
+  //showHide(submissionArea)
   quizArea.classList.add('hide')
   submissionArea.classList.remove('hide')
     
 }
+
+/**
+ * This function prevents the submit button from refreshing the page when the user submits their name to see their score, it then runs the showScore function
+ */
 
 function handleSubmit(event) {
   event.preventDefault();
   showScore()
 }
 
+/**
+ * This function calculates the players score, then displays this and a message dependent on their score. It also displays the restart button if the user wants to play again
+ */
+
 function showScore() {
   console.log(userName)
+  //showHide(submissionArea)
+  //showHide(scoreArea)
+  //showHide(restartButton)
   submissionArea.classList.add('hide')
   scoreArea.classList.remove('hide')
   restartButton.classList.remove('hide')
@@ -280,9 +308,16 @@ function showScore() {
   }
 }
 
+/**
+ * This function will restart the quiz if the user presses the restart button. It resets the score to 0 and goes back to the first question.
+ */
+
 function restartQuiz() {
   score = 0
   currentQuestion = 0
   scoreArea.classList.add('hide')
+  startButton.classList.add('hide')
   startQuiz()
+  //showHide(startButton)
+  //showHide(scoreArea)
 }
