@@ -5,6 +5,8 @@ body {
   margin: 0;
   font-family: 'Oswald', sans-serif;
   color: #EBEBEB;
+  background: url('../images/question-mark-background.jpg') no-repeat center center;
+  background-attachment: fixed;
 }
 
 .center-margin {
@@ -19,12 +21,6 @@ body {
 #header {
   font-size: 5rem;
   color: #000;
-}
-
-#hero-image {
-  background: url('../images/hero-image.png') no-repeat center center;
-  height: 11rem;
-  width: 100vw;
 }
 
 /* Quiz Area */
@@ -106,20 +102,42 @@ button {
 @media screen and (max-width: 1200px) {
 
   #header {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   #quiz-container {
     font-size: 20px;
   }
 
+  #answers-grid {
+    width: 65vw;
+  }
+
+  .btn {
+    font-size: 15px;
+  }
+
+
   #start-btn {
+    font-size: 40px;
+  }
+
+  #cat-image {
     font-size: 40px;
   }
 
 }
 
 @media screen and (max-width : 600px) {
+
+  body {
+    background: url('../images/question-mark-background-mobile.jpg') no-repeat center center;
+    background-attachment: fixed;
+  }
+
+  #header {
+    font-size: 3rem;
+  }
 
   #quiz-container {
     font-size: 16px;
@@ -137,14 +155,7 @@ button {
     font-size: 15px;
   }
 
-  #hero-image{
-    height: 5rem;
-    width: 100vw;
-    background-size: contain;
-    margin-bottom: 10px;
-  }
-
-  #username {
+    #username {
     height: 1rem;
     font-size: 12px;
     margin-left: auto;
