@@ -32,7 +32,7 @@ const questions = [
     choiceC: 'Naomi Osaka',
     correct: 'A',
     category: '<i class="fas fa-running"></i>'
-  }, /**
+  },
   {
     question: 'The delayed Euro 2020 football tournament took place in 2021. Which country won?',
     choiceA: 'Spain',
@@ -56,7 +56,7 @@ const questions = [
     choiceC: 'Toronto Raptors',
     correct: 'A',
     category: '<i class="fas fa-running"></i>'
-  },
+  }, /**
   {
     question: 'What were the most popular boys and girls names in the UK for 2021?',
     choiceA: 'Oliver & Lily',
@@ -265,17 +265,17 @@ function showScore() {
   restartButton.classList.remove('hide')
   let answerPercent = Math.round( 100 * score/questions.length)
   if (answerPercent == 100) {
-    finalScore.innerHTML = `Congratulations ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%`
+    finalScore.innerHTML = `Congratulations ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%! That's awesome. You clearly didn't miss a thing in 2021!`
   } else if (answerPercent >= 80) {
-    finalScore.innerHTML = `Well done ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%`
+    finalScore.innerHTML = `Wow ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%! That's great. You're not far off 100%. Do you think you can do it? Click restart to try again.`
   } else if (answerPercent >= 60) {
-    finalScore.innerHTML = `Well done ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%`
+    finalScore.innerHTML = `Hi ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%! That's a pretty good score. If you think you can do better next time click restart to try again`
   } else if (answerPercent >= 40) {
-    finalScore.innerHTML = `Well done ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%`
+    finalScore.innerHTML = `Hi ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%! That's ok but I think you can do better. Click restart if you want to try again.`
   } else if (answerPercent >= 20) {
-    finalScore.innerHTML = `Well done ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%`
+    finalScore.innerHTML = `Hi ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%! That's not bad but it's not great either. Click restart if you want to try again.`
   } else {
-    finalScore.innerHTML = `Well done ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%`
+    finalScore.innerHTML = `Hey ` + `${userName.value}` + `, you only scored ` + `${answerPercent}` + `%! You can do better than that. Click restart to try again.`
   }
 }
 
