@@ -8,8 +8,9 @@ const choiceA = document.getElementById('choice-a');
 const choiceB = document.getElementById('choice-b');
 const choiceC = document.getElementById('choice-c');
 const categoryImage = document.getElementById('category-image')
+
 let userScore = document.getElementById('user-score')
-var userName = document.getElementById('username')
+let userName = document.getElementById('username')
 let form = document.getElementById('submission-form')
 let scoreArea = document.getElementById('score-area')
 
@@ -190,12 +191,12 @@ function nextQuestion() {
     console.log('end')
     endQuiz()
   } else {
-    let q = questions[currentQuestion]
-    questionText.innerText = q.question
-    choiceA.innerText = q.choiceA
-    choiceB.innerText = q.choiceB
-    choiceC.innerText = q.choiceC
-    categoryImage.innerHTML = q.category
+    let question = questions[currentQuestion]
+    questionText.innerText = question.question
+    choiceA.innerText = question.choiceA
+    choiceB.innerText = question.choiceB
+    choiceC.innerText = question.choiceC
+    categoryImage.innerHTML = question.category
   }
 
   userScore.innerHTML = `Current score: ` + `${score}`;
