@@ -12,10 +12,19 @@
 </head>
 
 <body>
+
+  <!-- Header -->
+
   <header>
     <h1 id="header" class="center-text">2021 In A Quiz!</h1>
   </header>
+
+  <!-- Quiz container -->
+
   <div id="quiz-container" class="center-margin center-text">
+
+    <!-- Question, answer and running score area-->
+
     <div id="question-area" class="hide">
       <div>
         <p id="question">Question</p>
@@ -30,11 +39,14 @@
         <p id="user-score"></p>
       </div>
     </div>
+
+    <!-- Start button, form and final score area-->
+
     <div id="controls">
       <button id="start-btn" class="btn">Start Quiz</button>
       <div id="submission-area" class="hide">
         <form id="submission-form" class="=hide" action="#">
-          <label for="username">Enter name and get your score</label>
+          <label for="username">Enter name to get your score:</label>
           <input type="text" name="username" id="username" required>
           <button class="btn">Submit your score</button>
         </form>
