@@ -249,9 +249,9 @@ const questions = [
   {
     question: 'What was the highest grossing movie of 2021?',
     choiceA: 'Venom: Let There Be Carnage',
-    choiceB: 'F9: The Fast Saga',
-    choiceC: 'Spider-Man: No Way Home',
-    correct: 'C',
+    choiceB: 'Spider-Man: No Way Home',
+    choiceC: 'F9: The Fast Saga',
+    correct: 'B',
     category: '<i class="fas fa-video"></i>'
   },
   {
@@ -321,9 +321,9 @@ const questions = [
   {
     question: 'A study of almost 2,000 UK adults found that those who did this activity regularly experienced less cognitive decline. Was it:',
     choiceA: 'Watching Netflix',
-    choiceB: 'Doing bicep curls',
-    choiceC: 'Eating cheese',
-    correct: 'C',
+    choiceB: 'Eating cheese',
+    choiceC: 'Doing bicep curls',
+    correct: 'B',
     category: '<i class="fas fa-atom"></i>'
   },
   {
