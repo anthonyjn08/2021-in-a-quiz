@@ -28,3 +28,13 @@ When the user selects an answer, they're presented with a sweet alert pop up inf
 
 ![Correct Answer](docs/screenshots/correct-answer.jpg)
 ![Incorrect Answer](docs/screenshots/incorrect-answer.jpg)
+
+### **End of Quiz**
+
+After all questions have been answered, users are presented with an input form for their name and a button to submit this.
+
+![Submission Form](docs/screenshots/submission-form.jpg)
+
+Once the user has submitted the form, they're presented with their score as a percentage which is calculted in a javascript function, and then a message based on their score.
+
+![End of Quiz Message](docs/screenshots/final-score-message.jpg)

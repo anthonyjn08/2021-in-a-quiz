@@ -43,7 +43,7 @@ const questions = [
     choiceC: 'France',
     correct: 'B',
     category: '<i class="fas fa-running"></i>'
-  }, /**
+  },
   {
     question: 'Which football team did Lionel Messi join after ending his 21 year stay at Barcelona?',
     choiceA: 'Real Madrid',
@@ -179,7 +179,7 @@ const questions = [
     choiceC: 'Run The Jewels',
     correct: 'A',
     category: '<i class="fas fa-music"></i>'
-  } */
+  }  /***/
  
 ]
 
