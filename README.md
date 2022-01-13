@@ -14,7 +14,7 @@ The colour scheme I chose was inspired by an image that I was initially going to
 
 It feature a side on view of a head with four cogs for a brain inside and a large question mark. I have used colours similar to the cogs for the answer buttons and the catergory icon. For the background I wanted an image that wasn't too distracting. I found an image of question marks that I was able to change the opacity of online so it wasn't too overpowering.
 
-For the font I chose PT Serif because I wanted a font that stood out a little and wasn't just a plain font that blended in.
+For the font I chose PT Serif from google fonts, This was because I wanted a font that stood out a little and wasn't just a plain font that blended in.
 
 ### **Main Page**
 
@@ -93,3 +93,24 @@ The page was deployed on Github pages. The procedure followed was:
 4. The page will then display a message to indicate that the sit has been successfully deployed to GitHub pages and also provide the sites link.
 
 The link for the deployed site is - [2021 In A Quiz!](https://anthonyjn08.github.io/2021-in-a-quiz/).
+
+## **Credits**
+
+### **Content**
+
+* Quiz question were taken from [PubQuiz Questions HQ](https://pubquizquestionshq.com/), [Ultimate Quiz Questions](https://www.ultimatequizquestions.com/) and [Science Focus](https://www.sciencefocus.com/) as well as a few from my own memories of 2021.
+
+### **Code**
+
+* The code has been influcenced by the Code Institute Love Maths project and various teachings from the Code Institute curriculum.
+
+### **Media and Fonts**
+
+* The background image is from [Pixabay](https://pixabay.com/) which has royalty free images.
+* The background image was edited on [Online PNG Tools](https://onlinepngtools.com/).
+* The category icons are from [Font Awesome](https://fontawesome.com/).
+* The font is from [Google Fonts](https://fonts.google.com/).
+
+### **Thanks**
+
+A big thank you to my mentor Richard Wells for the encouragement, confidence boosting and support.
