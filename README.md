@@ -83,3 +83,13 @@ I used the Chrome Dev browser for lighthouse testing as there are no browser ext
 *Mobile Version*
 
 ![Mobile Lighthouse Test](docs/screenshots/lighthouse-mobile-test.jpg)
+
+## **Deployment**
+
+The page was deployed on Github pages. The procedure followed was:
+1. In the project's repository, go to the settings tab.
+2. On the left hand menu select the pages tab.
+3. In the source section, chose the Main branch from the drop-down menu and then press save.
+4. The page will then display a message to indicate that the sit has been successfully deployed to GitHub pages and also provide the sites link.
+
+The link for the deployed site is - [2021 In A Quiz!](https://anthonyjn08.github.io/2021-in-a-quiz/).
