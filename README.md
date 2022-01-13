@@ -44,7 +44,9 @@ Once the user has submitted the form, they're presented with their score as a pe
 * A countdown timer so user only has a limited time to answer each question before the quiz moves on to the next question.
 * A correct or incorrect sound alert.
 
-## **Validator Testing**
+## **Testing**
+
+### **Validator Testing**
 
 **HTML**
 
@@ -53,3 +55,15 @@ No errors were found when passing through the [W3C markup validator](https://val
 **CSS**
 
 No errors were found when passing through the [W3C CSS validator](https://jigsaw.w3.org/css-validator/).
+
+**Lighthouse**
+
+I used the Chrome Dev browser for lighthouse testing as there are no browser extensions installed which could affect the result.
+
+*Desktop Version*
+
+![Desktop Lighthouse Test](docs/screenshots/lighthouse-desktop-test.jpg)
+
+*Mobile Version*
+
+![Mobile Lighthouse Test](docs/screenshots/lighthouse-mobile-test.jpg)
