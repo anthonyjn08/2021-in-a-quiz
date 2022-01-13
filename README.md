@@ -38,3 +38,8 @@ After all questions have been answered, users are presented with an input form f
 Once the user has submitted the form, they're presented with their score as a percentage which is calculted in a javascript function, and then a message based on their score.
 
 ![End of Quiz Message](docs/screenshots/final-score-message.jpg)
+
+### **Future Features**
+
+* A countdown timer so user only has a limited time to answer each question before the quiz moves on to the next question.
+* A correct or incorrect sound alert.
