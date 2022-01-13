@@ -157,15 +157,15 @@ function restartQuiz() {
 
 const questions = [
   {
-    question: 'Which country hosted the delayed 2020 Olympics in 2021?',
+    question: 'Which country hosted the delayed 2020 Olympics?',
     choiceA: 'China',
     choiceB: 'Japan',
     choiceC: 'Australia',
     correct: 'B',
     category: '<i class="fas fa-running"></i>'
-  },/**
+  },
   {
-    question: 'Which female tennis player was the surprise winner of the US Open in 2021?',
+    question: 'Which female tennis player was the surprise winner of the US Open?',
     choiceA: 'Emma Raducanu',
     choiceB: 'Ashleigh Barty',
     choiceC: 'Naomi Osaka',
@@ -181,7 +181,7 @@ const questions = [
     category: '<i class="fas fa-running"></i>'
   },
   {
-    question: 'Which football team did Lionel Messi join after ending his 21 year stay at Barcelona?',
+    question: 'Which football team did Lionel Messi join after ending his 21 year association with Barcelona?',
     choiceA: 'Real Madrid',
     choiceB: 'Paris Saint-Germain',
     choiceC: 'Bayern Munich',
@@ -189,7 +189,7 @@ const questions = [
     category: '<i class="fas fa-running"></i>'
   },
   {
-    question: 'Which Basketball team won their first NBA title for 50 years in 2021?',
+    question: 'Which Basketball team won their first NBA title for 50 years?',
     choiceA: 'Milwaukee Bucks',
     choiceB: 'Phoenix Sun',
     choiceC: 'Toronto Raptors',
@@ -197,7 +197,7 @@ const questions = [
     category: '<i class="fas fa-running"></i>'
   },
   {
-    question: 'What were the most popular boys and girls names in the UK for 2021?',
+    question: 'What were the most popular boys and girls names in the UK?',
     choiceA: 'Oliver & Lily',
     choiceB: 'Noah & Sophia',
     choiceC: 'Muhammad & Olivia',
@@ -261,7 +261,7 @@ const questions = [
     category: '<i class="fas fa-video"></i>'
   },
   {
-    question: 'What 2021 film sees Keanu Reeves reprise his role as Neo 18 years after the previous film?',
+    question: 'Which film sees Keanu Reeves reprise his role as Neo 18 years after the previous film?',
     choiceA: 'Bill & Ted Face the Music',
     choiceB: 'The Matrix Revolutions',
     choiceC: 'The Matrix Resurrections',
@@ -269,7 +269,7 @@ const questions = [
     category: '<i class="fas fa-video"></i>'
   },
   {
-    question: 'What film won the Best Animated Feature film at the 2021 Oscars?',
+    question: 'What film won the Best Animated Feature film at the Oscars?',
     choiceA: 'Over the Moon',
     choiceB: 'Onward',
     choiceC: 'Soul',
@@ -277,7 +277,7 @@ const questions = [
     category: '<i class="fas fa-video"></i>'
   },
   {
-    question: 'Who received the most awards at the 2021 Grammys?',
+    question: 'Who received the most awards at the Grammys?',
     choiceA: 'Dua Lipa',
     choiceB: 'Beyonce',
     choiceC: 'Lady Gaga',
@@ -285,7 +285,7 @@ const questions = [
     category: '<i class="fas fa-music"></i>'
   },
   {
-    question: 'Who had the biggest selling album in Britain in 2021?',
+    question: 'Who had the biggest selling album in Britain?',
     choiceA: 'Ed Sheeran',
     choiceB: 'Dave',
     choiceC: 'Adele',
@@ -293,7 +293,7 @@ const questions = [
     category: '<i class="fas fa-music"></i>'
   },
   {
-    question: 'What song was the Christmas No.1 in 2021?',
+    question: 'What song was the Christmas No.1?',
     choiceA: 'Last Christmas',
     choiceB: 'Sausage Rolls For Everyone',
     choiceC: 'All I Want For Christmas Is You',
@@ -301,7 +301,7 @@ const questions = [
     category: '<i class="fas fa-music"></i>'
   },
   {
-    question: 'Bad Habits by Ed Sheeran was the longest running number 1 of 2021. How long did it top the charts?',
+    question: 'Bad Habits by Ed Sheeran was the longest running number 1 single of 2021. How long did it top the charts?',
     choiceA: '8 Weeks',
     choiceB: '10 Weeks',
     choiceC: '11 Weeks',
@@ -309,7 +309,7 @@ const questions = [
     category: '<i class="fas fa-music"></i>'
   },
   {
-    question: 'Who was voted best International Group at the 2021 BRIT awards?',
+    question: 'Who was voted best International Group at the BRIT awards?',
     choiceA: 'Haim',
     choiceB: 'BTS',
     choiceC: 'Run The Jewels',
@@ -317,7 +317,7 @@ const questions = [
     category: '<i class="fas fa-music"></i>'
   }, */
   {
-    question: 'A 2021 study of almost 2,000 UK adults found that those who did this activity regularly experienced less cognitive decline. Was it:',
+    question: 'A study of almost 2,000 UK adults found that those who did this activity regularly experienced less cognitive decline. Was it:',
     choiceA: 'Watching Netflix',
     choiceB: 'Doing bicep curls',
     choiceC: 'Eating cheese',
@@ -341,7 +341,7 @@ const questions = [
     category: '<i class="fas fa-atom"></i>'
   },
   {
-    question: 'Scientists observed electric eels in the Amazon teaming up in groups of up to 10 to hunt. They discharged a synchronised electric shock to their prey, but how many volts of electricity could 10 eels produce?',
+    question: 'Scientists observed electric eels in the Amazon River working in groups of up to 10 to hunt. They discharged a synchronised electric shock to their prey, but how many volts of electricity could 10 eels produce?',
     choiceA: '8,600V',
     choiceB: '8,200V',
     choiceC: '8,000V',
