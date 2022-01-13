@@ -35,7 +35,7 @@ const questions = [
     choiceC: 'Naomi Osaka',
     correct: 'A',
     category: '<i class="fas fa-running"></i>'
-  }, /**
+  },
   {
     question: 'The delayed Euro 2020 football tournament took place in 2021. Which country won?',
     choiceA: 'Spain',
@@ -43,7 +43,7 @@ const questions = [
     choiceC: 'France',
     correct: 'B',
     category: '<i class="fas fa-running"></i>'
-  },
+  }, /**
   {
     question: 'Which football team did Lionel Messi join after ending his 21 year stay at Barcelona?',
     choiceA: 'Real Madrid',
