@@ -18,6 +18,10 @@ For the font I chose PT Serif from google fonts, This was because I wanted a fon
 
 ### **Main Page**
 
+The main page upon visiting the site has the title of the site in the header and a simple layout of a dark grey quiz container overlaying a background image of question marks. There is also an intro message which describes what the quiz will be about.
+
+![Main Page](docs/screenshots/main-page.jpg)
+
 ### **Question and Answer Area**
 
 Once the player clicks start quiz, the first question is loaded onto the screen, each question is multiple choice with a total of 3 buttons with possible answers to choose from. There is a fontawesome icon for the current category of question. The players current score is also diplayed.
@@ -110,6 +114,7 @@ The link for the deployed site is - [2021 In A Quiz!](https://anthonyjn08.github
 * The background image was edited on [Online PNG Tools](https://onlinepngtools.com/).
 * The category icons are from [Font Awesome](https://fontawesome.com/).
 * The font is from [Google Fonts](https://fonts.google.com/).
+* The sweet alerts are from [Sweet Alert 2](https://sweetalert2.github.io/)
 
 ### **Thanks**
 
