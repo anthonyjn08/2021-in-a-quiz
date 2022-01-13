@@ -1,5 +1,6 @@
 const startButton = document.getElementById('start-btn');
 const restartButton = document.getElementById('restart-btn');
+const introArea = document.getElementById('intro-area')
 const quizArea = document.getElementById('question-area');
 const questionText = document.getElementById('question');
 const submissionArea = document.getElementById('submission-area');
@@ -55,6 +56,7 @@ function startQuiz() {
   //showHide(startButton)
   //showHide(quizArea)
   startButton.classList.add('hide');
+  introArea.classList.add('hide');
   quizArea.classList.remove('hide');
 }
 
