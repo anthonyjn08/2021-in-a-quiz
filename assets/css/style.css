@@ -37,7 +37,7 @@ body {
   width: 50rem;
   background-color: #707070;
   padding: 5px;
-  width: 85vw;
+  width: 85%;
   max-width: 50rem;
   border-radius: 10px;
   font-size: 25px;
@@ -113,6 +113,7 @@ button {
   /* quiz area*/
 
   #quiz-container {
+    width: 85%;
     font-size: 20px;
   }
 
@@ -151,6 +152,7 @@ button {
 
   #quiz-container {
     font-size: 16px;
+    width: 85%;
   }
 
   #answers-grid {

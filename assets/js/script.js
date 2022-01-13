@@ -3,21 +3,157 @@ const restartButton = document.getElementById('restart-btn');
 const quizArea = document.getElementById('question-area');
 const questionText = document.getElementById('question');
 const submissionArea = document.getElementById('submission-area');
-const finalScore = document.getElementById('final-score')
+const finalScore = document.getElementById('final-score');
 const choiceA = document.getElementById('choice-a');
 const choiceB = document.getElementById('choice-b');
 const choiceC = document.getElementById('choice-c');
-const categoryImage = document.getElementById('category-image')
+const categoryImage = document.getElementById('category-image');
 
-let userScore = document.getElementById('user-score')
-let userName = document.getElementById('username')
-let form = document.getElementById('submission-form')
-let scoreArea = document.getElementById('score-area')
+let userScore = document.getElementById('user-score');
+let userName = document.getElementById('username');
+let form = document.getElementById('submission-form');
+let scoreArea = document.getElementById('score-area');
 let currentQuestion = 0;
 let score = 0;
 
-form.addEventListener('submit', handleSubmit)
+form.addEventListener('submit', handleSubmit);
 
+
+
+
+/**
+ * This function populates the current question and answers to the relevent areas in the HTML
+ */
+
+function nextQuestion() {
+
+  if (currentQuestion > lastQuestion) {
+    endQuiz();
+  } else {
+    let question = questions[currentQuestion];
+    questionText.innerText = question.question;
+    choiceA.innerText = question.choiceA;
+    choiceB.innerText = question.choiceB;
+    choiceC.innerText = question.choiceC;
+    categoryImage.innerHTML = question.category;
+  }
+
+  userScore.innerHTML = `Current score: ` + `${score}`;
+}
+
+startButton.addEventListener('click', startQuiz);
+restartButton.addEventListener('click', restartQuiz);
+
+
+/**
+ * Function starts the quiz once user clicks
+ * the start quiz button
+ */
+
+function startQuiz() {
+  nextQuestion();
+  //showHide(startButton)
+  //showHide(quizArea)
+  startButton.classList.add('hide');
+  quizArea.classList.remove('hide');
+}
+
+function showHide(target) {
+  target.classList.contains('hide') ? target.classList.remove('hide') : target.classList.add('hide');
+} 
+
+/**
+ * CheckAnswer functions checks the answer against the answer button pressed and displays a message for correct or wrong answers
+ * and will increment the score if correct, then move on to the next question
+ */
+
+function checkAnswer(answer) {
+  
+  if(answer === questions[currentQuestion].correct) {
+    Swal.fire({
+      position: 'center',
+      icon: 'success',
+      title: 'Correct',
+      showConfirmButton: false,
+      timer: 1500
+    });
+    score++;
+    currentQuestion++;
+    nextQuestion();
+  } else {
+    Swal.fire({
+      position: 'center',
+      icon: 'error',
+      title: 'Wrong',
+      showConfirmButton: false,
+      timer: 1500
+    });
+    currentQuestion++;
+    nextQuestion();
+  }
+}
+
+/**
+ * This function removes the question area from view and displays the submission form for the player to get their score
+ */
+
+function endQuiz() {
+  //showHide(quizArea)
+  //showHide(submissionArea)
+  quizArea.classList.add('hide');
+  submissionArea.classList.remove('hide');
+    
+}
+
+/**
+ * This function prevents the submit button from refreshing the page when the user submits their name to see their score, it then runs the showScore function
+ */
+
+function handleSubmit(event) {
+  event.preventDefault();
+  showScore();
+}
+
+/**
+ * This function calculates the players score, then displays this and a message dependent on their score. It also displays the restart button if the user wants to play again
+ */
+
+function showScore() {
+  //showHide(submissionArea)
+  //showHide(scoreArea)
+  //showHide(restartButton)
+  submissionArea.classList.add('hide');
+  scoreArea.classList.remove('hide');
+  restartButton.classList.remove('hide');
+  let answerPercent = Math.round( 100 * score/questions.length)
+  if (answerPercent == 100) {
+    finalScore.innerHTML = `Congratulations ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%! That's awesome. You clearly didn't miss a thing in 2021!`
+  } else if (answerPercent >= 80) {
+    finalScore.innerHTML = `Wow ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%! That's great. You're not far off 100%. Do you think you can do it? Click restart to try again.`
+  } else if (answerPercent >= 60) {
+    finalScore.innerHTML = `Hi ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%! That's a pretty good score. If you think you can do better next time click restart to try again`
+  } else if (answerPercent >= 40) {
+    finalScore.innerHTML = `Hi ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%! That's ok but I think you can do better. Click restart if you want to try again.`
+  } else if (answerPercent >= 20) {
+    finalScore.innerHTML = `Hi ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%! That's not bad but it's not great either. Click restart if you want to try again.`
+  } else {
+    finalScore.innerHTML = `Hey ` + `${userName.value}` + `, you only scored ` + `${answerPercent}` + `%! You can do better than that. Click restart to try again.`
+  };
+}
+
+/**
+ * This function will restart the quiz if the user presses the restart button. It resets the score to 0 and goes back to the first question.
+ */
+
+function restartQuiz() {
+  score = 0;
+  currentQuestion = 0;
+  scoreArea.classList.add('hide');
+  startButton.classList.add('hide');
+  startQuiz();
+  //showHide(startButton)
+  //showHide(scoreArea)
+}
 
 const questions = [
   {
@@ -181,143 +317,6 @@ const questions = [
     category: '<i class="fas fa-music"></i>'
   }  /***/
  
-]
+];
 
 const lastQuestion = questions.length -1;
-
-/**
- * This function populates the current question and answers to the relevent areas in the HTML
- */
-
-function nextQuestion() {
-
-  if (currentQuestion > lastQuestion) {
-    console.log('end')
-    endQuiz()
-  } else {
-    let question = questions[currentQuestion]
-    questionText.innerText = question.question
-    choiceA.innerText = question.choiceA
-    choiceB.innerText = question.choiceB
-    choiceC.innerText = question.choiceC
-    categoryImage.innerHTML = question.category
-  }
-
-  userScore.innerHTML = `Current score: ` + `${score}`;
-}
-
-startButton.addEventListener('click', startQuiz)
-restartButton.addEventListener('click', restartQuiz)
-
-
-/**
- * Function starts the quiz once user clicks
- * the start quiz button
- */
-
-function startQuiz() {
-  nextQuestion()
-  console.log('starting')
-  //showHide(startButton)
-  //showHide(quizArea)
-  startButton.classList.add('hide')
-  quizArea.classList.remove('hide')
-}
-
-function showHide(target) {
-  target.classList.contains('hide') ? target.classList.remove('hide') : target.classList.add('hide')
-} 
-
-/**
- * CheckAnswer functions checks the answer against the answer button pressed and displays a message for correct or wrong answers
- * and will increment the score if correct, then move on to the next question
- */
-
-function checkAnswer(answer) {
-  
-  if(answer === questions[currentQuestion].correct) {
-    Swal.fire({
-      position: 'center',
-      icon: 'success',
-      title: 'Correct',
-      showConfirmButton: false,
-      timer: 1500
-    })
-    score++
-    currentQuestion++
-    nextQuestion()
-  } else {
-    Swal.fire({
-      position: 'center',
-      icon: 'error',
-      title: 'Wrong',
-      showConfirmButton: false,
-      timer: 1500
-    })
-    currentQuestion++
-    nextQuestion()
-  }
-}
-
-/**
- * This function removes the question area from view and displays the submission form for the player to get their score
- */
-
-function endQuiz() {
-  //showHide(quizArea)
-  //showHide(submissionArea)
-  quizArea.classList.add('hide')
-  submissionArea.classList.remove('hide')
-    
-}
-
-/**
- * This function prevents the submit button from refreshing the page when the user submits their name to see their score, it then runs the showScore function
- */
-
-function handleSubmit(event) {
-  event.preventDefault();
-  showScore()
-}
-
-/**
- * This function calculates the players score, then displays this and a message dependent on their score. It also displays the restart button if the user wants to play again
- */
-
-function showScore() {
-  console.log(userName)
-  //showHide(submissionArea)
-  //showHide(scoreArea)
-  //showHide(restartButton)
-  submissionArea.classList.add('hide')
-  scoreArea.classList.remove('hide')
-  restartButton.classList.remove('hide')
-  let answerPercent = Math.round( 100 * score/questions.length)
-  if (answerPercent == 100) {
-    finalScore.innerHTML = `Congratulations ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%! That's awesome. You clearly didn't miss a thing in 2021!`
-  } else if (answerPercent >= 80) {
-    finalScore.innerHTML = `Wow ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%! That's great. You're not far off 100%. Do you think you can do it? Click restart to try again.`
-  } else if (answerPercent >= 60) {
-    finalScore.innerHTML = `Hi ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%! That's a pretty good score. If you think you can do better next time click restart to try again`
-  } else if (answerPercent >= 40) {
-    finalScore.innerHTML = `Hi ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%! That's ok but I think you can do better. Click restart if you want to try again.`
-  } else if (answerPercent >= 20) {
-    finalScore.innerHTML = `Hi ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%! That's not bad but it's not great either. Click restart if you want to try again.`
-  } else {
-    finalScore.innerHTML = `Hey ` + `${userName.value}` + `, you only scored ` + `${answerPercent}` + `%! You can do better than that. Click restart to try again.`
-  }
-}
-
-/**
- * This function will restart the quiz if the user presses the restart button. It resets the score to 0 and goes back to the first question.
- */
-
-function restartQuiz() {
-  score = 0
-  currentQuestion = 0
-  scoreArea.classList.add('hide')
-  startButton.classList.add('hide')
-  startQuiz()
-  //showHide(startButton)
-  //showHide(scoreArea)
-}

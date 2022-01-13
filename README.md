@@ -20,7 +20,7 @@ For the font I chose PT Serif because I wanted a font that stood out a little an
 
 ### **Question and Answer Area**
 
-Once the player clicks start quiz, the first question is loaded onto the screen, each question is multiple choice with a total of 3 buttons with possible answers to choose from. There is also a fontawesome icon for the current category of question. The players current score is also diplayed.
+Once the player clicks start quiz, the first question is loaded onto the screen, each question is multiple choice with a total of 3 buttons with possible answers to choose from. There is a fontawesome icon for the current category of question. The players current score is also diplayed.
 
 ![Question Answer Area](docs/screenshots/question-answer-area.jpg)
 
@@ -45,6 +45,22 @@ Once the user has submitted the form, they're presented with their score as a pe
 * A correct or incorrect sound alert.
 
 ## **Testing**
+
+### **Bugs and Fixes**
+
+During development of the website I came across some bugs which I had to resolve.
+
+1. **Intended Outcome** -  The quiz would start once pressing the start quiz button.
+    * ***Issue Found***
+        * The following error was logged in the console - Uncaught ReferenceError: Cannot access 'questions' before initialization.
+    * ***Solution***
+        * I had declared the last question variable above the questions array. I moved this under the questions array and the issue was resolved.
+
+2. **Intended Outcome** -  The website background would cover the entire webpage.
+    * ***Issue Found***
+        * The background would not cover the whole screen on smaller mobile devices and portrait orientations on devices such as Ipads.
+    * ***Solution***
+        * I had to use a seperate background on smaller mobile devices and set the background attachment to fixed on all devices.
 
 ### **Validator Testing**
 
