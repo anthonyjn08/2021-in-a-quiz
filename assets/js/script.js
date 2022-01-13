@@ -10,6 +10,7 @@ const choiceB = document.getElementById('choice-b');
 const choiceC = document.getElementById('choice-c');
 const categoryImage = document.getElementById('category-image');
 
+let buttons = document.getElementsByClassName('answer-btn')
 let userScore = document.getElementById('user-score');
 let userName = document.getElementById('username');
 let form = document.getElementById('submission-form');
