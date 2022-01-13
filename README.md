@@ -43,3 +43,13 @@ Once the user has submitted the form, they're presented with their score as a pe
 
 * A countdown timer so user only has a limited time to answer each question before the quiz moves on to the next question.
 * A correct or incorrect sound alert.
+
+## **Validator Testing**
+
+**HTML**
+
+No errors were found when passing through the [W3C markup validator](https://validator.w3.org/).
+
+**CSS**
+
+No errors were found when passing through the [W3C CSS validator](https://jigsaw.w3.org/css-validator/).
