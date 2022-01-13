@@ -315,7 +315,7 @@ const questions = [
     choiceC: 'Run The Jewels',
     correct: 'A',
     category: '<i class="fas fa-music"></i>'
-  }, */
+  },
   {
     question: 'A study of almost 2,000 UK adults found that those who did this activity regularly experienced less cognitive decline. Was it:',
     choiceA: 'Watching Netflix',
