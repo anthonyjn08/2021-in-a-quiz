@@ -163,7 +163,7 @@ const questions = [
     choiceC: 'Australia',
     correct: 'B',
     category: '<i class="fas fa-running"></i>'
-  },
+  },/**
   {
     question: 'Which female tennis player was the surprise winner of the US Open in 2021?',
     choiceA: 'Emma Raducanu',
@@ -315,8 +315,47 @@ const questions = [
     choiceC: 'Run The Jewels',
     correct: 'A',
     category: '<i class="fas fa-music"></i>'
-  }  /***/
- 
+  }, */
+  {
+    question: 'A 2021 study of almost 2,000 UK adults found that those who did this activity regularly experienced less cognitive decline. Was it:',
+    choiceA: 'Watching Netflix',
+    choiceB: 'Doing bicep curls',
+    choiceC: 'Eating cheese',
+    correct: 'C',
+    category: '<i class="fas fa-atom"></i>'
+  },
+  {
+    question: 'In March 2021, 15 volunteers ventured into a cave beneath the Pyrenees, with no natural light or a clock until they came back out. They stayed in the cave for so long that they lost track of how many days had passed. How many was it?',
+    choiceA: '37 days',
+    choiceB: '40 days',
+    choiceC: '44 days',
+    correct: 'B',
+    category: '<i class="fas fa-atom"></i>'
+  },
+  {
+    question: 'In 2021, the Met Office predicted that by the end of the century, Britain could regularly see summer days at what temperature?',
+    choiceA: '38˚C',
+    choiceB: '39˚C',
+    choiceC: '40˚C',
+    correct: 'C',
+    category: '<i class="fas fa-atom"></i>'
+  },
+  {
+    question: 'Scientists observed electric eels in the Amazon teaming up in groups of up to 10 to hunt. They discharged a synchronised electric shock to their prey, but how many volts of electricity could 10 eels produce?',
+    choiceA: '8,600V',
+    choiceB: '8,200V',
+    choiceC: '8,000V',
+    correct: 'A',
+    category: '<i class="fas fa-atom"></i>'
+  },
+  {
+    question: 'What space weather phenomenon, first observed over the North Pole in 2014, was confirmed in 2021?',
+    choiceA: 'Space hurricane',
+    choiceB: 'Space tornado',
+    choiceC: 'Space monsoon',
+    correct: 'A',
+    category: '<i class="fas fa-atom"></i>'
+  }
 ];
 
 const lastQuestion = questions.length -1;
