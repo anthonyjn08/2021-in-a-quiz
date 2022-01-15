@@ -1,6 +1,6 @@
-# **2021 In A Quiz**
+# **2021 In A Quiz!**
 ## **Aim of the site**
-The aim of the site is to quiz players on events that happened in 2021. I have four categories of questions: sports, general knowledge, tv & film and music. 2021 Was another difficult year for many due to coronavirus so I've avoided any questions linked to the pandemic.
+The aim of the site is to quiz players on events that happened in 2021. I have five categories of questions: sports, general knowledge, tv & film, music and science. 2021 Was another difficult year for many due to coronavirus so I've avoided any questions linked to the pandemic.
 
 ![Am I responsive screentshot](docs/screenshots/am-i-responsive.jpg)
 
@@ -28,7 +28,7 @@ Once the player clicks start quiz, the first question is loaded onto the screen,
 
 ![Question Answer Area](docs/screenshots/question-answer-area.jpg)
 
-When the user selects an answer, they're presented with a sweet alert pop up informing them if their answer is correct or incorrect.
+When the user selects an answer, they're presented with a sweet alert pop up informing them if their answer is correct or incorrect. I do not display the correct answer to ensure the quiz can be replayed and users can improve their score.
 
 ![Correct Answer](docs/screenshots/correct-answer.jpg)
 ![Incorrect Answer](docs/screenshots/incorrect-answer.jpg)
@@ -49,6 +49,26 @@ Once the user has submitted the form, they're presented with their score as a pe
 * A correct or incorrect sound alert.
 
 ## **Testing**
+
+To test cross-compatability I've tested the site using various browsers on Windows, Android and Apple devices:
+* Chrome
+* Chrome Dev
+* Firefox 
+* Microsoft Edge
+* Safari
+
+I have also tested the site across various devices.
+
+* Windows 10 PC
+* Windows Surface Pro 7
+* Samsung A6 android tablet
+* OnePlus 9 pro android phone
+* Apple Ipad 7th Gen
+* Apple Iphone 12
+
+In addition I have used devtools to simulate various different screen sizes down to 280px.
+
+During my testing I have tested the various aspects of the quiz and website, such as the text input being required for the score and testing to make sure the end score percentage is correct based on the amount of correct answers. I'm happy to report that the quiz functioned correctly and as intended across all devices and browsers.
 
 ### **Bugs and Fixes**
 
