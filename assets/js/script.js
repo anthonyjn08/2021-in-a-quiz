@@ -157,7 +157,7 @@ const questions = [
     choiceC: 'Australia',
     correct: 'B',
     category: '<i class="fas fa-running"></i>'
-  }, /**
+  },
   {
     question: 'Which female tennis player was the surprise winner of the US Open?',
     choiceA: 'Emma Raducanu',
@@ -349,6 +349,6 @@ const questions = [
     choiceC: 'Space monsoon',
     correct: 'A',
     category: '<i class="fas fa-atom"></i>'
-  } */
+  }
 ];
 const lastQuestion = questions.length -1;
