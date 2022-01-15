@@ -1,34 +1,34 @@
-const startButton = document.getElementById('start-btn');
-const restartButton = document.getElementById('restart-btn');
-const introArea = document.getElementById('intro-area')
-const quizArea = document.getElementById('question-area');
-const questionText = document.getElementById('question');
 const submissionArea = document.getElementById('submission-area');
+const categoryImage = document.getElementById('category-image');
+const buttons = document.getElementsByClassName('answer-btn');
+const restartButton = document.getElementById('restart-btn');
 const finalScore = document.getElementById('final-score');
+const quizArea = document.getElementById('question-area');
+const startButton = document.getElementById('start-btn');
+const questionText = document.getElementById('question');
+const introArea = document.getElementById('intro-area');
+const scoreArea = document.getElementById('score-area');
 const choiceA = document.getElementById('choice-a');
 const choiceB = document.getElementById('choice-b');
 const choiceC = document.getElementById('choice-c');
-const categoryImage = document.getElementById('category-image');
 
-let buttons = document.getElementsByClassName('answer-btn')
+let form = document.getElementById('submission-form');
 let userScore = document.getElementById('user-score');
 let userName = document.getElementById('username');
-let form = document.getElementById('submission-form');
-const scoreArea = document.getElementById('score-area');
 let currentQuestion = 0;
 let score = 0;
 
+restartButton.addEventListener('click', restartQuiz);
+startButton.addEventListener('click', startQuiz);
 form.addEventListener('submit', handleSubmit);
 
 
 
 
 /**
- * This function populates the current question and answers to the relevent areas in the HTML
+ * This function populates the current question and answers in the HTML and displays the players current score
  */
-
 function nextQuestion() {
-
   if (currentQuestion > lastQuestion) {
     endQuiz();
   } else {
@@ -43,8 +43,6 @@ function nextQuestion() {
   userScore.innerHTML = `Current score: ` + `${score}`;
 }
 
-startButton.addEventListener('click', startQuiz);
-restartButton.addEventListener('click', restartQuiz);
 
 
 /**
