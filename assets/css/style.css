@@ -34,11 +34,11 @@ body {
 /* quiz container and area */
 
 #quiz-container {
-  width: 50rem;
+  /*width: 50rem;*/
   background-color: #525252;
   padding: 5px;
   width: 85%;
-  max-width: 50rem;
+  max-width: 55rem;
   border-radius: 0.625rem;
   font-size: 1.5rem;
 }
@@ -70,6 +70,7 @@ button {
 #start-btn {
   height: 6rem;
   font-size: 4rem;
+  margin-bottom: 1.25rem;
 }
 
 #choice-a {
@@ -89,15 +90,17 @@ button {
 
 /* form section */
 
-#submission {
-  margin-left: auto;
-  margin-right: auto;
-  display: grid;
+#submission-area {
+ margin: 8px;
 }
 
 #username {
   height: 2rem;
   font-size: 1.5rem;
+}
+
+#score-area {
+  margin-bottom: 1.5rem;
 }
 
 /* media queries */
