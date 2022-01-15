@@ -14,7 +14,7 @@ let buttons = document.getElementsByClassName('answer-btn')
 let userScore = document.getElementById('user-score');
 let userName = document.getElementById('username');
 let form = document.getElementById('submission-form');
-let scoreArea = document.getElementById('score-area');
+const scoreArea = document.getElementById('score-area');
 let currentQuestion = 0;
 let score = 0;
 
@@ -54,11 +54,12 @@ restartButton.addEventListener('click', restartQuiz);
 
 function startQuiz() {
   nextQuestion();
-  //showHide(startButton)
-  //showHide(quizArea)
-  startButton.classList.add('hide');
-  introArea.classList.add('hide');
-  quizArea.classList.remove('hide');
+  showHide(startButton)
+  showHide(quizArea)
+  showHide(introArea)
+  //startButton.classList.add('hide');
+  //introArea.classList.add('hide');
+  //quizArea.classList.remove('hide');
 }
 
 function showHide(target) {
@@ -107,10 +108,10 @@ function checkAnswer(answer) {
  */
 
 function endQuiz() {
-  //showHide(quizArea)
-  //showHide(submissionArea)
-  quizArea.classList.add('hide');
-  submissionArea.classList.remove('hide');
+  showHide(quizArea)
+  showHide(submissionArea)
+  //quizArea.classList.add('hide');
+  //submissionArea.classList.remove('hide');
     
 }
 
@@ -128,12 +129,11 @@ function handleSubmit(event) {
  */
 
 function showScore() {
-  //showHide(submissionArea)
-  //showHide(scoreArea)
-  //showHide(restartButton)
-  submissionArea.classList.add('hide');
-  scoreArea.classList.remove('hide');
-  restartButton.classList.remove('hide');
+  showHide(submissionArea)
+  showHide(scoreArea)
+  //submissionArea.classList.add('hide');
+  //scoreArea.classList.remove('hide');
+  //restartButton.classList.remove('hide');
   let answerPercent = Math.round( 100 * score/questions.length)
   if (answerPercent == 100) {
     finalScore.innerHTML = `Congratulations ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%! That's awesome. You clearly didn't miss a thing in 2021!`
@@ -157,11 +157,12 @@ function showScore() {
 function restartQuiz() {
   score = 0;
   currentQuestion = 0;
-  scoreArea.classList.add('hide');
-  startButton.classList.add('hide');
+  //scoreArea.classList.add('hide');
+  //startButton.classList.add('hide');
   startQuiz();
-  //showHide(startButton)
-  //showHide(scoreArea)
+  showHide(startButton)
+  showHide(scoreArea)
+  showHide(introArea)
 }
 
 const questions = [
@@ -172,7 +173,7 @@ const questions = [
     choiceC: 'Australia',
     correct: 'B',
     category: '<i class="fas fa-running"></i>'
-  },
+  } /**
   {
     question: 'Which female tennis player was the surprise winner of the US Open?',
     choiceA: 'Emma Raducanu',
@@ -364,7 +365,7 @@ const questions = [
     choiceC: 'Space monsoon',
     correct: 'A',
     category: '<i class="fas fa-atom"></i>'
-  }
+  } */
 ];
 
 const lastQuestion = questions.length -1;
