@@ -54,17 +54,17 @@ body {
 
 #category-image {
   font-size: 4rem;
-  color: #009CB8;
+  color: #0095F7;
 }
 
 /* buttons and controls */
 
 button {
   font-family: inherit;
-  background-color: #87CEEB;
+  background-color: #0095F7;
   border-radius: 5px;
   font-size: 1.5rem;
-  border: 2px solid #101EDA;
+  border: 2px solid #00568F;
 }
 
 #start-btn {
