@@ -71,7 +71,7 @@ function showHide(target) {
  */
 
 function checkAnswer(answer) {
-  
+
   if(answer === questions[currentQuestion].correct) {
     Swal.fire({
       position: 'center',
