@@ -22,9 +22,6 @@ restartButton.addEventListener('click', restartQuiz);
 startButton.addEventListener('click', startQuiz);
 form.addEventListener('submit', handleSubmit);
 
-
-
-
 /**
  * This function populates the current question and answers in the HTML and displays the players current score
  */
@@ -43,37 +40,37 @@ function nextQuestion() {
   userScore.innerHTML = `Current score: ` + `${score}`;
 }
 
-
-
 /**
- * Function starts the quiz once user clicks
- * the start quiz button
+ * Function starts the quiz once user clicks the start quiz button
  */
-
 function startQuiz() {
   nextQuestion();
-  showHide(startButton)
-  showHide(quizArea)
-  showHide(introArea)
+  showHide(startButton);
+  showHide(quizArea);
+  showHide(introArea);
 }
 
+/**
+ * Function will add or remove hide classlist to targetted html elements based on whether they do or don't have the class 'hide'
+ */
 function showHide(target) {
   target.classList.contains('hide') ? target.classList.remove('hide') : target.classList.add('hide');
 }
 
+/**
+ * Will get the answer dataset value from the selected html answer button
+ */
 for (let button of buttons) {
   button.addEventListener('click', (e) => {
-    checkAnswer(e.target.dataset.answer)
-  })
+    checkAnswer(e.target.dataset.answer);
+  });
 }
 
 /**
  * CheckAnswer functions checks the answer against the answer button pressed and displays a message for correct or wrong answers
  * and will increment the score if correct, then move on to the next question
  */
-
 function checkAnswer(answer) {
-
   if(answer === questions[currentQuestion].correct) {
     Swal.fire({
       position: 'center',
@@ -101,58 +98,57 @@ function checkAnswer(answer) {
 /**
  * This function removes the question area from view and displays the submission form for the player to get their score
  */
-
 function endQuiz() {
-  showHide(quizArea)
-  showHide(submissionArea)
-      
+  showHide(quizArea);
+  showHide(submissionArea);
 }
 
 /**
- * This function prevents the submit button from refreshing the page when the user submits their name to see their score, it then runs the showScore function
+ * This function uses prevent default so the submit button doesn't refresh the page when the user submits their name to see their score, 
+ * it then runs the showScore function
  */
-
 function handleSubmit(event) {
   event.preventDefault();
   showScore();
 }
 
 /**
- * This function calculates the players score, then displays this and a message dependent on their score. It also displays the restart button if the user wants to play again
+ * This function calculates the players score, then displays this and a message dependent on their score.
  */
-
 function showScore() {
-  showHide(submissionArea)
-  showHide(scoreArea)
-  let answerPercent = Math.round( 100 * score/questions.length)
+  showHide(submissionArea);
+  showHide(scoreArea);
+  let answerPercent = Math.round( 100 * score/questions.length);
   if (answerPercent == 100) {
-    finalScore.innerHTML = `Congratulations ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%! That's awesome. You clearly didn't miss a thing in 2021!`
+    finalScore.innerHTML = `Congratulations ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%! That's awesome. You clearly didn't miss a thing in 2021!`;
   } else if (answerPercent >= 80) {
-    finalScore.innerHTML = `Wow ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%! That's great. You're not far off 100%. Do you think you can do it? Click restart to try again.`
+    finalScore.innerHTML = `Wow ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%! That's great. You're not far off 100%. Do you think you can do it? Click restart to try again.`;
   } else if (answerPercent >= 60) {
-    finalScore.innerHTML = `Hi ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%! That's a pretty good score. If you think you can do better next time click restart to try again`
+    finalScore.innerHTML = `Hi ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%! That's a pretty good score. If you think you can do better next time click restart to try again`;
   } else if (answerPercent >= 40) {
-    finalScore.innerHTML = `Hi ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%! That's ok but I think you can do better. Click restart if you want to try again.`
+    finalScore.innerHTML = `Hi ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%! That's ok but I think you can do better. Click restart if you want to try again.`;
   } else if (answerPercent >= 20) {
-    finalScore.innerHTML = `Hi ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%! That's not bad but it's not great either. Click restart if you want to try again.`
+    finalScore.innerHTML = `Hi ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%! That's not bad but it's not great either. Click restart if you want to try again.`;
   } else {
-    finalScore.innerHTML = `Hey ` + `${userName.value}` + `, you only scored ` + `${answerPercent}` + `%! You can do better than that. Click restart to try again.`
-  };
+    finalScore.innerHTML = `Hey ` + `${userName.value}` + `, you only scored ` + `${answerPercent}` + `%! You can do better than that. Click restart to try again.`;
+  }
 }
 
 /**
  * This function will restart the quiz if the user presses the restart button. It resets the score to 0 and goes back to the first question.
  */
-
 function restartQuiz() {
   score = 0;
   currentQuestion = 0;
   startQuiz();
-  showHide(startButton)
-  showHide(scoreArea)
-  showHide(introArea)
+  showHide(startButton);
+  showHide(scoreArea);
+  showHide(introArea);
 }
 
+/**
+ * Quiz questions
+ */
 const questions = [
   {
     question: 'Which country hosted the delayed 2020 Olympics?',
@@ -161,7 +157,7 @@ const questions = [
     choiceC: 'Australia',
     correct: 'B',
     category: '<i class="fas fa-running"></i>'
-  } /**
+  },
   {
     question: 'Which female tennis player was the surprise winner of the US Open?',
     choiceA: 'Emma Raducanu',
@@ -353,7 +349,6 @@ const questions = [
     choiceC: 'Space monsoon',
     correct: 'A',
     category: '<i class="fas fa-atom"></i>'
-  } */
+  }
 ];
-
 const lastQuestion = questions.length -1;
