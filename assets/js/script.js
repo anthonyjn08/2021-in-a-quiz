@@ -57,9 +57,6 @@ function startQuiz() {
   showHide(startButton)
   showHide(quizArea)
   showHide(introArea)
-  //startButton.classList.add('hide');
-  //introArea.classList.add('hide');
-  //quizArea.classList.remove('hide');
 }
 
 function showHide(target) {
@@ -110,9 +107,7 @@ function checkAnswer(answer) {
 function endQuiz() {
   showHide(quizArea)
   showHide(submissionArea)
-  //quizArea.classList.add('hide');
-  //submissionArea.classList.remove('hide');
-    
+      
 }
 
 /**
@@ -131,9 +126,6 @@ function handleSubmit(event) {
 function showScore() {
   showHide(submissionArea)
   showHide(scoreArea)
-  //submissionArea.classList.add('hide');
-  //scoreArea.classList.remove('hide');
-  //restartButton.classList.remove('hide');
   let answerPercent = Math.round( 100 * score/questions.length)
   if (answerPercent == 100) {
     finalScore.innerHTML = `Congratulations ` + `${userName.value}` + `, you scored ` + `${answerPercent}` + `%! That's awesome. You clearly didn't miss a thing in 2021!`
@@ -157,8 +149,6 @@ function showScore() {
 function restartQuiz() {
   score = 0;
   currentQuestion = 0;
-  //scoreArea.classList.add('hide');
-  //startButton.classList.add('hide');
   startQuiz();
   showHide(startButton)
   showHide(scoreArea)
