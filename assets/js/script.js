@@ -63,7 +63,13 @@ function startQuiz() {
 
 function showHide(target) {
   target.classList.contains('hide') ? target.classList.remove('hide') : target.classList.add('hide');
-} 
+}
+
+for (let button of buttons) {
+  button.addEventListener('click', (e) => {
+    checkAnswer(e.target.dataset.answer)
+  })
+}
 
 /**
  * CheckAnswer functions checks the answer against the answer button pressed and displays a message for correct or wrong answers
