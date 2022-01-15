@@ -88,6 +88,8 @@ During development of the website I came across some bugs which I had to resolve
 
 ### **Validator Testing**
 
+The technologies used for this project are html, css and javascript. Below are the details of validator testing I have undertaken.
+
 **HTML**
 
 No errors were found when passing through the [W3C markup validator](https://validator.w3.org/).
@@ -95,6 +97,10 @@ No errors were found when passing through the [W3C markup validator](https://val
 **CSS**
 
 No errors were found when passing through the [W3C CSS validator](https://jigsaw.w3.org/css-validator/).
+
+**Javascript**
+
+No errors were found when using the [jshint.com validator](https://jshint.com/)
 
 **Lighthouse**
 
