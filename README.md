@@ -8,11 +8,11 @@ The aim of the site is to quiz players on events that happened in 2021. I have f
 
 ### **Colour Scheme and Font**
 
-The colour scheme I chose was inspired by an image that I have used as my favicon. I was initially going to use as my hero image in the early design of the website.
+The colour scheme I chose was inspired by an image that I have used as my favicon. I was initially going to use this as my hero image in the early design of the website.
 
 ![Favicon](docs/screenshots/favicon.png)
 
-It feature a side on view of a head with four cogs for a brain inside and a large question mark. I have used colours similar to the cogs for the answer buttons and the catergory icon. For the background I wanted an image that wasn't too distracting. I found an image of question marks that I was able to change the opacity of online so it wasn't too overpowering.
+It features a side on view of a head with four cogs for a brain inside and a large question mark. I have used colours similar to the cogs for the answer buttons and the catergory icon. For the background I wanted an image that wasn't too distracting. I found an image of question marks that I was able to change the opacity of online so it wasn't too overpowering.
 
 For the font I chose PT Serif from google fonts, This was because I wanted a font that stood out a little and wasn't just a plain font that blended in.
 
@@ -24,7 +24,7 @@ The main page upon visiting the site has the title of the site in the header and
 
 ### **Question and Answer Area**
 
-Once the player clicks start quiz, the first question is loaded onto the screen; each question is multiple choice with a total of 3 buttons with possible answers to choose from. There is a fontawesome icon for the current category of question. The players current score is also diplayed.
+Once the player clicks start quiz, the first question is loaded onto the screen; each question is multiple choice with a total of three buttons with possible answers to choose from. There is a fontawesome icon for the current category of question. The players current score is also diplayed.
 
 ![Question Answer Area](docs/screenshots/question-answer-area.jpg)
 
@@ -39,7 +39,7 @@ After all questions have been answered, users are presented with an input form f
 
 ![Submission Form](docs/screenshots/submission-form.jpg)
 
-Once the user has submitted the form, they're presented with their score as a percentage which is calculted in a javascript function, and then a message based on their score.
+Once the user has submitted the form, they're presented with their score as a percentage which is calculated in a javascript function, and then a message based on their score.
 
 ![End of Quiz Message](docs/screenshots/final-score-message.jpg)
 
@@ -63,7 +63,6 @@ I have also tested the site across various devices.
 
 * Windows 10 PC
 * Windows Surface Pro 7
-* Samsung A6 android tablet
 * OnePlus 9 pro android phone
 * Apple Ipad 7th Gen
 * Apple Iphone 12
