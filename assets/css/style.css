@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 
 /* general page styling and classes */
 
@@ -31,7 +31,7 @@ body {
   color: #000;
 }
 
-/* quiz container and area */
+/* quiz container and question-answer area */
 
 #quiz-container {
   /*width: 50rem;*/
@@ -75,20 +75,20 @@ button {
 
 #choice-a {
   background-color: #F7A1ED;;
-  border: 2px solid #BC10A8;;
+  border: 2px solid #FD02F8;;
 }
 
 #choice-b {
-  background-color: #FBA860;;
+  background-color: #FFC412;;
   border: 2px solid #89521A;
 }
 
 #choice-c {
-  background-color: #D9FFF5;
+  background-color: #86FFA7;
   border: 2px solid #6B8F71;
 }
 
-/* form section */
+/* form and score section */
 
 #submission-area {
  margin: 8px;
