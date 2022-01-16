@@ -134,6 +134,7 @@ The link for the deployed site is - [2021 In A Quiz!](https://anthonyjn08.github
 ### **Code**
 
 * The code has been influcenced by the Code Institute Love Maths project and various teachings from the Code Institute curriculum.
+* The questions array was inspired by [Code Explained](https://www.codeexplained.dev/2018/10/create-multiple-choice-quiz-using-javascript.html)
 
 ### **Media and Fonts**
 

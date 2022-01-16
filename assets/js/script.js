@@ -1,3 +1,5 @@
+// Variables
+
 const submissionArea = document.getElementById('submission-area');
 const categoryImage = document.getElementById('category-image');
 const buttons = document.getElementsByClassName('answer-btn');
