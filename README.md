@@ -1,6 +1,6 @@
 # **2021 In A Quiz!**
 ## **Aim of the site**
-The aim of the site is to quiz players on events that happened in 2021. I have five categories of questions: sports, general knowledge, tv & film, music and science. 2021 Was another difficult year for many due to coronavirus so I've avoided any questions linked to the pandemic.
+The aim of the site is to quiz players on events that happened in 2021. I have five categories of questions: sports, general knowledge, tv & film, music and science. 2021 was another difficult year for many due to coronavirus so I've avoided any questions linked to the pandemic.
 
 ![Am I responsive screentshot](docs/screenshots/am-i-responsive.jpg)
 
@@ -24,11 +24,11 @@ The main page upon visiting the site has the title of the site in the header and
 
 ### **Question and Answer Area**
 
-Once the player clicks start quiz, the first question is loaded onto the screen, each question is multiple choice with a total of 3 buttons with possible answers to choose from. There is a fontawesome icon for the current category of question. The players current score is also diplayed.
+Once the player clicks start quiz, the first question is loaded onto the screen; each question is multiple choice with a total of 3 buttons with possible answers to choose from. There is a fontawesome icon for the current category of question. The players current score is also diplayed.
 
 ![Question Answer Area](docs/screenshots/question-answer-area.jpg)
 
-When the user selects an answer, they're presented with a sweet alert pop up informing them if their answer is correct or incorrect. I do not display the correct answer to ensure the quiz can be replayed and users can improve their score.
+When the user selects an answer, they're presented with a sweet alert pop up informing them if their answer is correct or incorrect. I do not display the correct answer when a question is answered, to ensure the quiz can be replayed and users can improve their score.
 
 ![Correct Answer](docs/screenshots/correct-answer.jpg)
 ![Incorrect Answer](docs/screenshots/incorrect-answer.jpg)
@@ -45,8 +45,10 @@ Once the user has submitted the form, they're presented with their score as a pe
 
 ### **Future Features**
 
-* A countdown timer so user only has a limited time to answer each question before the quiz moves on to the next question.
+* A countdown timer so the user only has a limited time to answer each question before the quiz moves on to the next question.
 * A correct or incorrect sound alert.
+* A function to randomise the questions.
+* A leaderboard to track player scores.
 
 ## **Testing**
 
