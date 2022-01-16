@@ -197,7 +197,7 @@ const questions = [
     choiceC: 'Muhammad & Olivia',
     correct: 'C',
     category: '<i class="fas fa-brain"></i>'
-  },/**
+  },
   {
     question: 'Which country became a republic on the 55th anniversary of its independence?',
     choiceA: 'Barbados',
@@ -349,6 +349,6 @@ const questions = [
     choiceC: 'Space monsoon',
     correct: 'A',
     category: '<i class="fas fa-atom"></i>'
-  } */
+  }
 ];
 const lastQuestion = questions.length -1;

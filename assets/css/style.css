@@ -34,7 +34,6 @@ body {
 /* quiz container and question-answer area */
 
 #quiz-container {
-  /*width: 50rem;*/
   background-color: #525252;
   padding: 5px;
   width: 85%;
@@ -133,7 +132,6 @@ button {
   #start-btn {
     font-size: 2.5rem;
   }
-
 }
 
 @media screen and (max-width : 600px) {
@@ -182,5 +180,4 @@ button {
     margin-bottom: 5px;
     display: grid;
   }
-  
 }
